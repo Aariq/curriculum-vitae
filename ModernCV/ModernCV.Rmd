@@ -1,0 +1,94 @@
+---
+name: Eric Scott
+position: "PhD Candidate"
+address: "Department of Biology, Tufts University"
+phone: +1 925-788-9855
+www: ericrscott.com
+email: "Eric.Scott@tufts.edu"
+twitter: LeafyEricScott
+github: Aariq
+aboutme: Ecometabolomics, multivariate statistics, R
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::moderncv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(lubridate)
+library(here)
+library(readxl)
+library(glue)
+```
+
+```{r experience, inclue=FALSE}
+jobs.raw <- read_csv(here::here("data", "jobs.csv"))
+jobs <-
+  jobs.raw %>% 
+  fill(Start, End, What, With, Where, Tag) %>%  
+  mutate(End = as_date(End)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  ))
+```
+
+# Education
+
+```{r education}
+edu <- rorcid::orcid_educations("0000-0002-7430-7879")
+edu$`0000-0002-7430-7879`$`education-summary` %>% 
+  mutate(`end-date.year.value` = replace_na(`end-date.year.value`, "2019")) %>% 
+  detailed_entries(
+    what = `role-title`,
+    when = glue::glue("{`start-date.year.value`} - {`end-date.year.value`}"), 
+    with = organization.name,
+    where = organization.address.city
+  )
+```
+
+# Publications
+
+```{r publications}
+scholar::get_publications("kPEDEO0AAAAJ") %>%
+  arrange(desc(year)) %>%
+  detailed_entries(
+    what = title,
+    when = year,
+    with = author,
+    where = journal
+  )
+
+# bibliography_entries(here("My Publications.bib"), title = NULL)
+```
+
+# Research Experience
+
+```{r research}
+jobs %>% 
+  filter(Tag == "research") %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
+# Teaching Experience
+
+```{r}
+jobs %>%
+  filter(Tag == "teaching") %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
