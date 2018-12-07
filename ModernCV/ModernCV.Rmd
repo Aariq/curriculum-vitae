@@ -27,12 +27,20 @@ jobs.raw <- read_csv(here::here("data", "jobs.csv"))
 jobs <-
   jobs.raw %>% 
   fill(Start, End, What, With, Where, Tag) %>%  
-  mutate(End = as_date(End)) %>% 
+  mutate(Start = mdy(Start),
+         End = mdy(End)) %>% 
   mutate(When = case_when(
     is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
     year(Start) == year(End) ~ year(End) %>% as.character(),
     TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
   ))
+```
+
+```{r presentations, include=FALSE}
+presentations.raw <- read_csv(here("data", "presentations.csv"))
+presentations <- 
+  presentations.raw %>% 
+  mutate(When = mdy(When))
 ```
 
 # Education
@@ -64,6 +72,31 @@ scholar::get_publications("kPEDEO0AAAAJ") %>%
 # bibliography_entries(here("My Publications.bib"), title = NULL)
 ```
 
+## Software
+
+```{r}
+df <- tribble(~what, ~when, ~with, ~where, ~why,
+              "Contributor to the `webchem` package by Eduard Szöcs et al.",
+              2017,
+              NA,
+              "https://cran.r-project.org/web/packages/webchem/",
+              "Contributed functions to scrape flavor percept data from flavor.net and to scrape retention indices from NIST given chemical identifier numbers",
+              "Author of `chemhelper` package",
+              2018,
+              NA,
+              "https://github.com/Aariq/chemhelper",
+              "Provides wrapper functions for working with IonAnalytics deconvolution software as well as other R packages for multivariate analysis"
+              )
+```
+
+```{r}
+df %>% 
+  arrange(desc(when)) %>% 
+  detailed_entries(what = what, when = when, with = with, where = where, why = why)
+```
+
+
+
 # Research Experience
 
 ```{r research}
@@ -82,7 +115,89 @@ jobs %>%
 
 ```{r}
 jobs %>%
-  filter(Tag == "teaching") %>% 
+  filter(Tag == "teaching", year(Start) > 2005) %>%
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
+
+## Invited Guest Lectures
+
+```{r}
+presentations %>% 
+  filter(Tag == "lecture") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(what = Title,
+                   when = When,
+                   with = Conference,
+                   where = Location,
+                   why = Award)
+```
+
+# Presentations
+
+## Talks
+
+```{r}
+presentations %>% 
+  filter(Tag == "talk") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(what = Title,
+                   when = glue("{month(When, label = TRUE)} {year(When)}"),
+                   with = Conference,
+                   where = Location,
+                   why = Award)
+```
+
+## Posters
+
+```{r}
+presentations %>% 
+  filter(Tag == "poster") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(what = Title,
+                   when = When,
+                   with = Conference,
+                   where = Location,
+                   why = Award)
+```
+
+## Other
+
+```{r}
+presentations %>% 
+  filter(Tag == "workshop") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(what = Title,
+                   when = When,
+                   with = Conference,
+                   where = Location,
+                   why = Award)
+```
+
+# Awards and Honors
+
+```{r}
+read_csv(here("data", "awards and grants.csv")) %>% 
+  mutate(year = str_extract(date, "\\d{4}")) %>% 
+  arrange(desc(year)) %>% 
+  brief_entries(what = award, when = date, with = with)
+```
+
+# Service
+
+**Manuscript Reviews**
+
+- Journal of Chemical Ecology (1)
+
+```{r}
+jobs %>%
+  filter(Tag == "service") %>% 
   detailed_entries(
     what = What,
     when = When,
