@@ -1,0 +1,142 @@
+---
+name: Eric Scott
+position: "PhD Candidate"
+address: "Department of Biology, Tufts University"
+phone: +1 925-788-9855
+www: ericrscott.com
+email: "Eric.Scott@tufts.edu"
+twitter: LeafyEricScott
+github: Aariq
+aboutme: Updates since last we met...
+date: "`r format(Sys.time(), '%B %Y')`"
+geometry: margin=0.5in
+output: vitae::moderncv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(lubridate)
+library(here)
+library(readxl)
+library(glue)
+```
+
+```{r experience, inclue=FALSE}
+jobs.raw <- read_csv(here::here("data", "jobs.csv"))
+jobs <-
+  jobs.raw %>% 
+  fill(Start, End, What, With, Where, Tag) %>%  
+  mutate(Start = mdy(Start),
+         End = mdy(End)) %>% 
+  mutate(When = case_when(
+    is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
+    year(Start) == year(End) ~ year(End) %>% as.character(),
+    TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
+  ))
+```
+
+```{r presentations, include=FALSE}
+presentations.raw <- read_csv(here("data", "presentations.csv"))
+presentations <- 
+  presentations.raw %>% 
+  mutate(When = mdy(When))
+```
+
+# Recent Publications
+
+```{r publications}
+scholar::get_publications("kPEDEO0AAAAJ") %>%
+  arrange(desc(year)) %>%
+  filter(year >2017) %>% 
+  detailed_entries(
+    what = title,
+    when = year,
+    with = author,
+    where = journal
+  )
+
+# bibliography_entries(here("My Publications.bib"), title = NULL)
+```
+
+# Recent Presentations
+
+## Talks
+
+```{r}
+presentations %>%
+  filter(year(When) > 2017, Tag == "talk") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(
+    what = Title,
+    when = glue("{month(When, label = TRUE)} {year(When)}"),
+    with = Conference,
+    where = Location,
+    why = Award
+  )
+```
+
+## Posters
+
+```{r}
+presentations %>%
+  filter(year(When) > 2017, Tag == "poster") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(
+    what = Title,
+    when = glue("{month(When, label = TRUE)} {year(When)}"),
+    with = Conference,
+    where = Location,
+    why = Award
+  )
+```
+
+# Teaching
+
+## TA-ing
+
+```{r}
+jobs %>%
+  filter(Tag == "teaching", year(Start) > 2015) %>%
+  detailed_entries(
+    what = What,
+    when = When
+  )
+```
+
+## Invited Lectures
+
+```{r}
+presentations %>%
+  filter(year(When) > 2017, Tag == "lecture") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(
+    what = Title,
+    when = glue("{month(When, label = TRUE)} {year(When)}"),
+    with = Conference,
+    where = Location
+  )
+```
+
+## Other
+
+```{r}
+presentations %>%
+  filter(year(When) > 2017, Tag == "workshop") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(
+    what = Title,
+    when = glue("{month(When, label = TRUE)} {year(When)}"),
+    with = Conference,
+    where = Location
+  )
+```
+
+# Classes
+
+```{r}
+df <- tibble(what = "Modeling, simulating and optimizing biological systems (EE 194/BIO 196)", when = "Spring 2018", with = "Joel Grodstein")
+brief_entries(df, what = what, when = when, with = with)
+```
+
