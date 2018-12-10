@@ -9,7 +9,6 @@ twitter: LeafyEricScott
 github: Aariq
 aboutme: Updates since last we met...
 date: "`r format(Sys.time(), '%B %Y')`"
-geometry: margin=0.5in
 output: vitae::moderncv
 ---
 
@@ -99,10 +98,12 @@ presentations %>%
 ```{r}
 jobs %>%
   filter(Tag == "teaching", year(Start) > 2015) %>%
+  arrange(desc(year(Start))) %>% 
+  mutate(When = glue("{c('Spring',rep('Fall', 5))} {When}")) %>% 
   detailed_entries(
     what = What,
     when = When
-  )
+  ) 
 ```
 
 ## Invited Lectures
