@@ -57,6 +57,59 @@ edu$`0000-0002-7430-7879`$`education-summary` %>%
   )
 ```
 
+# Research Experience
+
+```{r research}
+jobs %>% 
+  filter(Tag == "research") %>% 
+  arrange(desc(Start)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
+# Teaching Experience
+
+```{r}
+jobs %>%
+  filter(Tag == "teaching", year(Start) > 2005) %>%
+  arrange(desc(Start)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why
+  )
+```
+
+
+## Invited Guest Lectures
+
+```{r}
+presentations %>% 
+  filter(Tag == "lecture") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(what = Title,
+                   when = When,
+                   with = Conference,
+                   where = Location,
+                   why = Award)
+```
+
+# Awards and Honors
+
+```{r}
+read_csv(here("data", "awards and grants.csv")) %>% 
+  mutate(year = str_extract(date, "\\d{4}")) %>% 
+  arrange(desc(year)) %>% 
+  brief_entries(what = award, when = date, with = with)
+```
+
 # Publications
 
 ```{r publications}
@@ -93,50 +146,6 @@ df <- tribble(~what, ~when, ~with, ~where, ~why,
 df %>% 
   arrange(desc(when)) %>% 
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
-```
-
-
-
-# Research Experience
-
-```{r research}
-jobs %>% 
-  filter(Tag == "research") %>% 
-  detailed_entries(
-    what = What,
-    when = When,
-    with = With,
-    where = Where,
-    why = Why
-  )
-```
-
-# Teaching Experience
-
-```{r}
-jobs %>%
-  filter(Tag == "teaching", year(Start) > 2005) %>%
-  detailed_entries(
-    what = What,
-    when = When,
-    with = With,
-    where = Where,
-    why = Why
-  )
-```
-
-
-## Invited Guest Lectures
-
-```{r}
-presentations %>% 
-  filter(Tag == "lecture") %>% 
-  arrange(desc(When)) %>% 
-  detailed_entries(what = Title,
-                   when = When,
-                   with = Conference,
-                   where = Location,
-                   why = Award)
 ```
 
 # Presentations
@@ -180,14 +189,7 @@ presentations %>%
                    why = Award)
 ```
 
-# Awards and Honors
 
-```{r}
-read_csv(here("data", "awards and grants.csv")) %>% 
-  mutate(year = str_extract(date, "\\d{4}")) %>% 
-  arrange(desc(year)) %>% 
-  brief_entries(what = award, when = date, with = with)
-```
 
 # Service
 
