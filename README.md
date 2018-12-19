@@ -1,2 +1,2 @@
 # curriculum-vitae
-My attempt to make a CV using the vitae package for R
+My CV made using the [vitae](https://github.com/ropenscilabs/vitae) package for R.
