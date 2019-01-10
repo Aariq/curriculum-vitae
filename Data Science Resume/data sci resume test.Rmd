@@ -59,12 +59,9 @@ Main
 Eric R. Scott {#title}
 --------------------------------------------------------------------------------
 
-### Currently searching for a PhD student position
+### Currently searching for a data science position
 
-Please note that this is a *real* resume, and I'm really looking for a PhD
-student position at the moment. I made this resume because Yihui asked me
-if I'd like to test the **pagedown** package with my resume. If you are
-interested in my background and skills, please feel free to contact me.
+Some text that is a quick summary of what I do and what I'm looking for.
 
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -76,7 +73,7 @@ PhD Candidate in Biology
 
 Medford, MA
 
-2014—2019
+2014--2019
 
 Dissertation: Indirect and Interactive Impacts of Climate Change on Tea (*Camellia sinensis*) Metabolites and Quality.
 
@@ -86,47 +83,45 @@ M.S. in Ecology, Evolution, and Conservation Biology
 
 Urbana, IL
 
-2010
+2007--2010
 
 Thesis: Interactions between habitat and ungulate herbivory limit the spread of *Ipomopsis aggregata* (polemoniaceae)
 
+
+### Whitman College
+
+B.A. in Biology
+
+Walla Walla, WA
+
+2002--2006
+
+Thesis: Behavioral Evidence for Host-Race Formation in the Gall-Midge *Dasineura folliculi* (Felt)
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ### Graduate Research Assistant
 
-Beijing Institute of Genomics, Chinese Academy of Sciences
+Tufts University
 
-Beijing, China
+Medford, MA
 
-2011 - 2014
+2014--2019
 
-- Performed computational biology research towards understanding regulation of alternative splicing in human and mouse transcriptome.
-- Found EGFR pathway related mutations, aimed to understand the impacts of cancer mutations on EGFR signaling pathway.
+- Did a thing
+- Did a different thing.
 
-### Bioinformatican
+### Graduate Research Assistant
 
-My Health Gene Technology Co., Ltd.
+University of Illinois at Urbana-Champaign
 
-Beijing, China
+Urbana, IL
 
 2015 - 2016
 
-- Investigated how cancer cells spread to other parts of the body at the single cell level.
+- stuff I did
 
-### Visiting Scientist
-
-University of Alabama at Birmingham
-
-AL, USA
-
-2016 - 2018
-
-- Investigated the role of mitochondria in development of cancer.
-- Investigated the evolution of genome architecture and its role in important evolutionary events.
-- Detected thrombotic thrombocytopenic purpura related mutations in mutiple patients' blood genome.
-  
 
 Professional Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
