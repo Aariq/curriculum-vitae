@@ -12,7 +12,7 @@ Aside
 ================================================================================
 
 
-![Lijia Yu](https://avatars1.githubusercontent.com/u/895125?s=400&v=4){width=80%}
+![Eric Scott](https://avatars3.githubusercontent.com/u/25404783?s=460&v=4){width=80%}
 
 
 Contact Info {#contact}
@@ -26,22 +26,19 @@ Contact Info {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-- Analysis of multivariate data, especialy metabolomic data, using a variety of unsupervised and supervised statistical techniques including redundancy analysis, partial least squares regression, PERMANOVA, and PCA.
+- Multivariate data analysis and modeling
 
 - Expert in R and R Studio with emphasis on the Tidyverse.
 
-- Webscraping with R
+- Expert in communicating to scientific and general public
 
-- Package development and contribution in R
+- Webscraping and data wrangling
+
+- Package development
 
 - Github
 
-- Regular expressions
-
-- Beginner in Python and SQL
-
-- Highly skilled in communicating findings to both scientific and general public audiences
-
+- Some Python and SQL
 
 
 Disclaimer {#disclaimer}
@@ -75,7 +72,7 @@ Medford, MA
 
 2014--2019
 
-Dissertation: Indirect and Interactive Impacts of Climate Change on Tea (*Camellia sinensis*) Metabolites and Quality.
+<!-- Dissertation: Indirect and Interactive Impacts of Climate Change on Tea (*Camellia sinensis*) Metabolites and Quality. -->
 
 ### University of Illinois at Urbana-Champaign
 
@@ -85,7 +82,7 @@ Urbana, IL
 
 2007--2010
 
-Thesis: Interactions between habitat and ungulate herbivory limit the spread of *Ipomopsis aggregata* (polemoniaceae)
+<!-- Thesis: Interactions between habitat and ungulate herbivory limit the spread of *Ipomopsis aggregata* (polemoniaceae) -->
 
 
 ### Whitman College
@@ -96,9 +93,9 @@ Walla Walla, WA
 
 2002--2006
 
-Thesis: Behavioral Evidence for Host-Race Formation in the Gall-Midge *Dasineura folliculi* (Felt)
+<!-- Thesis: Behavioral Evidence for Host-Race Formation in the Gall-Midge *Dasineura folliculi* (Felt) -->
 
-Research Experience {data-icon=laptop}
+Research Experience {data-icon=flask}
 --------------------------------------------------------------------------------
 
 ### Graduate Research Assistant
@@ -118,43 +115,57 @@ University of Illinois at Urbana-Champaign
 
 Urbana, IL
 
-2015 - 2016
+2007--2010
 
 - stuff I did
+- More stuff
 
 
-Professional Experience {data-icon=suitcase}
+Selected Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-### Data Scientist, intern
+### Biostatistics Recitation
 
-SupStat Inc.
+Tufts University
 
-Beijing, China
+Medford, MA
 
-2014
-
-::: concise
-- Taught R language to beginners. 
-- Wrote Shiny app demos.
-- Converted statistical tutorials from SPSS to R language.
-:::
-
-### Bioinformatician
-
-My Health Gene Technology Co., Ltd.
-
-Beijing, China
-
-2015 - 2016
+2016--2018
 
 ::: concise
-- Analyzed whole-exome sequencing data. 
-- Wrote analysis pipelines of ChIP-seq, single cell DNA-seq and single cell RNA-seq.
-- Studied tumor metastasis and wrote research reports. 
-- Also did case studies to identify the genetic defect causing rare disease.
+- Created recitation course to teach introductory R for Biostatistics
+- Developed [course materials](https://github.com/Aariq/biotstatistics-recitation-2018) with a focus on tidyverse
+- Converted homework assignments from SPSS to R, making use of R Markdown documents
 :::
 
+### Reproducible Workflows for Ecology Research 
+
+Tufts University
+
+Medford, MA
+
+Oct 2018
+
+::: concise
+- Developed and presented [workshop](https://github.com/Aariq/Reproducibility-ERGO) on improving reproducibility in data analysis for ecologists
+- Introduced atendees to file organization tips, R projects, creating R packages, GitHub, and data archiving
+- Facilitated discussion on ways to improve reproducibility of atendees' analyses
+:::
+
+
+### R Notebooks: Richly annotate your statistical analyses and produce dynamic reports
+
+Tufts University
+
+Medford, MA
+
+Jan 2018
+
+::: concise
+- Demonstrated uses of R Notebooks and other R Markdown formats for biological research
+- Discussed value of readable, annotated code for reproducibility
+- Facilitated discussion on value of sharing R Notebooks with collaborators
+:::
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
