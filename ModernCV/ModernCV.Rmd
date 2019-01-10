@@ -51,7 +51,7 @@ edu$`0000-0002-7430-7879`$`education-summary` %>%
   mutate(`end-date.year.value` = replace_na(`end-date.year.value`, "2019")) %>% 
   detailed_entries(
     what = `role-title`,
-    when = glue::glue("{`start-date.year.value`} - {`end-date.year.value`}"), 
+    when = glue::glue("{`start-date.year.value`}--{`end-date.year.value`}"), 
     with = organization.name,
     where = organization.address.city
   )
