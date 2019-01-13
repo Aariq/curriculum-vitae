@@ -14,6 +14,7 @@ Aside
 
 ![Eric Scott](https://avatars3.githubusercontent.com/u/25404783?s=460&v=4){width=80%}
 
+PhD student specializing in multivariate data analysis, metabolomics, reproducible analyses, and teaching looking for jobs and postdocs .....
 
 Contact Info {#contact}
 --------------------------------------------------------------------------------
@@ -26,7 +27,7 @@ Contact Info {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-- Multivariate data analysis and modeling
+- Multivariate data analysis
 
 - Expert in R and R Studio with emphasis on the Tidyverse.
 
@@ -44,7 +45,7 @@ Skills {#skills}
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+<!--This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).-->
 
 Last updated on `r Sys.Date()`.
 
@@ -57,8 +58,6 @@ Eric R. Scott {#title}
 --------------------------------------------------------------------------------
 
 ### Currently searching for a data science position
-
-Some text that is a quick summary of what I do and what I'm looking for.
 
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -106,8 +105,9 @@ Medford, MA
 
 2014--2019
 
-- Did a thing
-- Did a different thing.
+- Designed and carried out multiple field experiments in China and the US
+- Developed a strong understanding of multivariate approaches to analyzing metabolomics datasets
+- Provided statistics consulting to Tufts researchers
 
 ### Graduate Research Assistant
 
@@ -117,14 +117,13 @@ Urbana, IL
 
 2007--2010
 
-- stuff I did
-- More stuff
-
+- Designed and conducted a multi-year field experiment
+- Analyzed data using generalized linear models and mixed effects models
 
 Selected Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-### Biostatistics Recitation
+### Biostatistics using R
 
 Tufts University
 
@@ -132,80 +131,96 @@ Medford, MA
 
 2016--2018
 
-::: concise
-- Created recitation course to teach introductory R for Biostatistics
-- Developed [course materials](https://github.com/Aariq/biotstatistics-recitation-2018) with a focus on tidyverse
+<!--::: concise-->
+- Created companion [recitation section](https://github.com/Aariq/biotstatistics-recitation-2018) to Biostatistics course to teach introductory R with a focus on the Tidyverse
 - Converted homework assignments from SPSS to R, making use of R Markdown documents
-:::
+<!--:::-->
 
 ### Reproducible Workflows for Ecology Research 
 
-Tufts University
+Workshop presented at Tufts University
 
 Medford, MA
 
 Oct 2018
 
-::: concise
-- Developed and presented [workshop](https://github.com/Aariq/Reproducibility-ERGO) on improving reproducibility in data analysis for ecologists
-- Introduced atendees to file organization tips, R projects, creating R packages, GitHub, and data archiving
-- Facilitated discussion on ways to improve reproducibility of atendees' analyses
-:::
+
+- Developed [workshop](https://github.com/Aariq/Reproducibility-ERGO) on reproducibility in data analysis for ecologists
+- Demonstrated use of R projects, project organization, authoring R packages, GitHub, and data archiving
+
 
 
 ### R Notebooks: Richly annotate your statistical analyses and produce dynamic reports
 
-Tufts University
+Workshop presented at Tufts University
 
 Medford, MA
 
 Jan 2018
 
-::: concise
-- Demonstrated uses of R Notebooks and other R Markdown formats for biological research
-- Discussed value of readable, annotated code for reproducibility
-- Facilitated discussion on value of sharing R Notebooks with collaborators
-:::
+- Demonstrated uses of R Notebooks for biological research
+- Discussed value of readable, annotated code for reproducibility and collaboration
 
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-### Introduction to R Language for Beginners.
-
-Instructor of R and Data Mining Training Courses at SupStat Inc.
-
-Beijing, China
-
-2014
-
-### Computational Biology and Bioinformatics.
-
-Teaching assistant of GBS CB2-201 courses at UAB
-
-AL, USA
-
-2016 - 2017
 
 
 Selected Publications and Posters {data-icon=file}
 --------------------------------------------------------------------------------
 
-### Genetic and epigenetic signals are found predictive to the distribution of intra-individual divergence of alternative splicing.
+### Can pests rescue tea quality from climate change?
+First place winning talk for Entomological Society of America Joint Meeting, Plant-Insect Ecosystems student competition
 
-Poster for 2013 International Conference of Genomics
+Vancouver, BC
 
-Qingdao, China
+Nov 2018
 
-2014
+**ER Scott**, CM Orians
 
-**Yu L**, Chen B, Zhang Z.
+### Generating and analyzing metabolomic data from tea plant volatiles
 
-### ESCRT-0 complex modulates Rbf mutant cell survival by regulating Rhomboid endosomal trafficking and EGFR signaling.
+Poster for Data Intensive Studies Center (DISC) Symposium at Tufts University
 
-J Cell Sci. 2016 May 15;129(10):2075-84.
+Medford, MA
+
+Aug 2017
+
+**ER Scott**, N Kfoury
+
+### Combined impacts of prolonged drought and warming on plant size and foliar chemistry
+
+Ann. Bot. (in press)
 
 N/A
 
-2016 
+2019
 
-Sheng Z, **Yu L**, Zhang T, Pei X, Li X, Zhang Z and Du W. 
+CM Orians, R Schweiger, J Dukes, **ER Scott**, C Müller
+
+### Interactive effects of drought severity and simulated herbivory on tea (Camellia sinensis) volatile and non-volatile metabolites
+
+Environ. Exp. Bot. 157, 283–292 (2019).
+
+N/A
+
+2019
+
+ **ER Scott**, X Li, N Kfoury, J Morimoto, WY Han, S Ahmed, SB Cash, TS Griffin, JR Stepp, A Robbat, CM Orians
+ 
+### Striking changes in tea metabolites due to elevational effects
+
+Food Chem. 264, 334–341 (2018).
+
+N/A
+
+2018
+
+N Kfoury, J Morimoto, A Kern, **ER Scott**, CM Orians, S Ahmed, TS Griffin, SB Cash, JR Stepp, D-Y Xue, C-L Long, A Robbat
+
+### Direct Contact Sorptive Extraction: A Robust Method for Sampling Plant Volatiles in the Field
+
+J. Agric. Food Chem. 65, 8501–8509 (2017).
+
+N/A
+
+2017
+
+N Kfoury, **ER Scott**, CM Orians, A Robbat 
