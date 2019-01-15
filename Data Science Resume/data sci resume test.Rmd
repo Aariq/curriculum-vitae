@@ -12,9 +12,9 @@ Aside
 ================================================================================
 
 
-![Eric Scott](https://avatars3.githubusercontent.com/u/25404783?s=460&v=4){width=80%}
+![Eric Scott](/Users/scottericr/Documents/curriculum-vitae/data/eric.png){width=80%}
 
-PhD student specializing in multivariate data analysis, metabolomics, reproducible analyses, and teaching looking for jobs and postdocs .....
+PhD student specializing in multivariate data analysis, metabolomics, reproducible analyses, and teaching. On the market for data science and postdoc positions.
 
 Contact Info {#contact}
 --------------------------------------------------------------------------------
@@ -57,7 +57,7 @@ Main
 Eric R. Scott {#title}
 --------------------------------------------------------------------------------
 
-### Currently searching for a data science position
+### Eco-metabolomics, multivariate statistics, teaching
 
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -163,7 +163,7 @@ Jan 2018
 
 
 
-Selected Publications and Posters {data-icon=file}
+Selected Presentations {data-icon=comment-alt}
 --------------------------------------------------------------------------------
 
 ### Can pests rescue tea quality from climate change?
@@ -184,6 +184,9 @@ Medford, MA
 Aug 2017
 
 **ER Scott**, N Kfoury
+
+Selected Publications {data-icon=file}
+--------------------------------------------------------------------------------
 
 ### Combined impacts of prolonged drought and warming on plant size and foliar chemistry
 
