@@ -4,7 +4,7 @@ position: "PhD Candidate"
 address: "Department of Biology, Tufts University"
 phone: +1 925-788-9855
 www: ericrscott.com
-email: "Eric.Scott@tufts.edu"
+email: Eric.Scott@tufts.edu
 twitter: LeafyEricScott
 github: Aariq
 aboutme: Ecometabolomics, multivariate statistics, R
@@ -121,7 +121,6 @@ scholar::get_publications("kPEDEO0AAAAJ") %>%
     with = author,
     where = journal
   )
-
 # bibliography_entries(here("My Publications.bib"), title = NULL)
 ```
 
