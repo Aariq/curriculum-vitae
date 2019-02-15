@@ -1,5 +1,5 @@
 ---
-name: Eric Scott
+name: Eric R Scott
 position: "PhD Candidate"
 address: "Department of Biology, Tufts University"
 phone: +1 925-788-9855

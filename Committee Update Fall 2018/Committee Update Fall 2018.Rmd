@@ -99,7 +99,7 @@ presentations %>%
 jobs %>%
   filter(Tag == "teaching", year(Start) > 2015) %>%
   arrange(desc(year(Start))) %>% 
-  mutate(When = glue("{c('Spring',rep('Fall', 5))} {When}")) %>% 
+  mutate(When = glue("{c('Spring',rep('Fall', 4))} {When}")) %>% 
   detailed_entries(
     what = What,
     when = When
