@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.15)  15 FEB 2019 14:27
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.17)  17 FEB 2019 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,25 +333,81 @@ ibility.sty
 Package: moderncvcompatibility 2015/07/28 v2.0.0 modern curriculum vitae and le
 tter compatibility patches
 )
+\c@collection@phones@count=\count174
+\c@collection@socials@count=\count175
+\c@cvcolumnscounter=\count176
+\c@cvcolumnsautowidthcounter=\count177
+\c@tmpiteratorcounter=\count178
+\cvcolumnsdummywidth=\skip62
+\cvcolumnswidth=\skip63
+\cvcolumnsautowidth=\skip64
+\cvcolumnautowidth=\skip65
+\bibindent=\skip66
+) (./moderncvstylecasual.sty
+Package: moderncvstylecasual 2015/07/28 v2.0.0 modern curriculum vitae and lett
+er style scheme: casual
 
-! LaTeX Error: File `l3regex.sty' not found.
+(/Users/scottericr/Library/TinyTeX/texmf-dist/tex/latex/moderncv/moderncviconsa
+wesome.sty
+Package: moderncviconsawesome 2015/07/28 v2.0.0 modern curriculum vitae and let
+ter icons: awesome
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(/Users/scottericr/Library/TinyTeX/texmf-dist/tex/latex/fontawesome/fontawesome
+.sty
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.195 ^^M
-          
+(/Users/scottericr/Library/TinyTeX/texmf-dist/tex/latex/fontawesome/fontawesome
+symbols-generic.tex) (/Users/scottericr/Library/TinyTeX/texmf-dist/tex/latex/fo
+ntspec/fontspec.sty
+Package: fontspec 2019/02/12 v2.7b Font selection for XeLaTeX and LuaLaTeX
+
+(/Users/scottericr/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex
+.sty
+Package: fontspec-xetex 2019/02/12 v2.7b Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count179
+\l__fontspec_language_int=\count180
+\l__fontspec_strnum_int=\count181
+\l__fontspec_tmp_int=\count182
+\l__fontspec_tmpa_int=\count183
+\l__fontspec_tmpb_int=\count184
+\l__fontspec_tmpc_int=\count185
+\l__fontspec_em_int=\count186
+\l__fontspec_emdef_int=\count187
+\l__fontspec_strong_int=\count188
+\l__fontspec_strongdef_int=\count189
+\l__fontspec_tmpa_dim=\dimen141
+\l__fontspec_tmpb_dim=\dimen142
+\l__fontspec_tmpc_dim=\dimen143
+(/Users/scottericr/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(/Users/scottericr/Library/TinyTeX/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+)) (/Users/scottericr/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cf
+g)
+LaTeX Info: Redefining \itshape on input line 4044.
+LaTeX Info: Redefining \slshape on input line 4049.
+LaTeX Info: Redefining \scshape on input line 4054.
+LaTeX Info: Redefining \upshape on input line 4059.
+LaTeX Info: Redefining \em on input line 4089.
+LaTeX Info: Redefining \emph on input line 4114.
+))
+
+! Package fontspec Error: The font "FontAwesome" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.46 
+      
 Here is how much of TeX's memory you used:
- 12405 strings out of 494921
- 230125 string characters out of 6176462
- 283073 words of memory out of 5000000
- 16291 multiletter control sequences out of 15000+600000
- 535336 words of font info for 26 fonts, out of 8000000 for 9000
+ 15445 strings out of 494921
+ 321473 string characters out of 6176462
+ 423626 words of memory out of 5000000
+ 19299 multiletter control sequences out of 15000+600000
+ 535352 words of font info for 28 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,0n,45p,768b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,0n,45p,768b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 No pages of output.
