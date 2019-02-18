@@ -190,7 +190,7 @@ Selected Publications {data-icon=file}
 
 ### Combined impacts of prolonged drought and warming on plant size and foliar chemistry
 
-Ann. Bot. (in press)
+Ann. Bot. (2019). doi:10.1093/aob/mcz004
 
 N/A
 
@@ -200,7 +200,7 @@ CM Orians, R Schweiger, J Dukes, **ER Scott**, C Müller
 
 ### Interactive effects of drought severity and simulated herbivory on tea (Camellia sinensis) volatile and non-volatile metabolites
 
-Environ. Exp. Bot. 157, 283–292 (2019).
+Environ. Exp. Bot. 157, 283–292 (2019). doi:10.1016/j.envexpbot.2018.10.025
 
 N/A
 
@@ -210,7 +210,7 @@ N/A
  
 ### Striking changes in tea metabolites due to elevational effects
 
-Food Chem. 264, 334–341 (2018).
+Food Chem. 264, 334–341 (2018). doi:10.1007/978-981-13-2140-5
 
 N/A
 
@@ -220,7 +220,7 @@ N Kfoury, J Morimoto, A Kern, **ER Scott**, CM Orians, S Ahmed, TS Griffin, SB C
 
 ### Direct Contact Sorptive Extraction: A Robust Method for Sampling Plant Volatiles in the Field
 
-J. Agric. Food Chem. 65, 8501–8509 (2017).
+J. Agric. Food Chem. 65, 8501–8509 (2017). doi:10.1016/j.foodchem.2018.05.040
 
 N/A
 
