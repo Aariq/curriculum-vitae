@@ -133,11 +133,11 @@ df <- tribble(~what, ~when, ~with, ~where, ~why,
               NA,
               "https://cran.r-project.org/web/packages/webchem/",
               "Contributed functions to scrape flavor percept data from flavor.net and to scrape retention indices from NIST given chemical identifier numbers",
-              "Author of `chemhelper` package",
+              "Author of `holodeck` package",
               2018,
               NA,
-              "https://github.com/Aariq/chemhelper",
-              "Provides wrapper functions for working with IonAnalytics deconvolution software as well as other R packages for multivariate analysis"
+              "https://github.com/Aariq/holodeck",
+              "A Tidy Interface for Simulating Multivariate Data"
               )
 ```
 
@@ -195,6 +195,7 @@ presentations %>%
 **Manuscript Reviews**
 
 - Journal of Chemical Ecology (1)
+- Ecological Entomology (1)
 
 ```{r}
 jobs %>%
