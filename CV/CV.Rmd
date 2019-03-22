@@ -9,7 +9,9 @@ twitter: LeafyEricScott
 github: Aariq
 aboutme: Ecometabolomics, multivariate statistics, R
 date: "`r format(Sys.time(), '%B %Y')`"
-output: vitae::moderncv
+output: 
+  vitae::moderncv:
+    theme: classic
 ---
 
 ```{r setup, include=FALSE}
