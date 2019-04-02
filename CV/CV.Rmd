@@ -45,6 +45,20 @@ presentations <-
   mutate(When = mdy(When))
 ```
 
+```{r prof-devel, include=FALSE}
+development.raw <- read_csv(here("data", "professional development.csv"))
+development <- 
+  development.raw %>% 
+  mutate(date = mdy(date))
+```
+
+```{r awards, include=FALSE}
+awards.raw <- read_csv(here("data", "awards and grants.csv"))
+awards <- awards.raw %>% 
+  mutate(date = mdy(date)) %>% 
+  arrange(desc(date))
+```
+
 # Education
 
 ```{r education}
@@ -106,10 +120,9 @@ presentations %>%
 # Awards and Honors
 
 ```{r}
-read_csv(here("data", "awards and grants.csv")) %>% 
-  mutate(year = str_extract(date, "\\d{4}")) %>% 
-  arrange(desc(year)) %>% 
-  brief_entries(what = award, when = date, with = with)
+ awards %>% 
+  filter(tag != "failed" & tag != "travel") %>% 
+  brief_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), with = with)
 ```
 
 # Publications
@@ -208,6 +221,17 @@ jobs %>%
     with = With,
     where = Where,
     why = Why
+  )
+```
+
+# Professional Development
+
+```{r}
+development %>% 
+  brief_entries(
+    what = title,
+    when = date,
+    with = location
   )
 ```
 

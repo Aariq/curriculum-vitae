@@ -1,13 +1,20 @@
-award,date,with
-First place in Tufts Graduate Research Symposium 5 minute talk category,"Feb, 2017",Graduate School of Arts and Sciences
-Second place in Tufts Graduate Research Symposium 15 minute talk category,"Feb, 2016",Graduate School of Arts and Sciences
-Tufts Institute for the Environment Fellowship,2016--2017,Tufts Institute for the Environment
-Teaching Excellence award,"Mar, 2009",UIUC School of Integrative Biology
-PEEC Research Grant,Mar 2008 and 2009,"UIUC Program for Ecology, Evolution, and Conservation Biology"
-Francis M. and Harlie M. Clark Research Support Grant,March 2008 and 2009,UIUC
-Cynthia Lechner Biology Award,"May, 2006",Whitman College
-First place in M.S. graduate student poster competition,"Mar, 2006","Entomological Society of America, Pacific Branch"
-Superior Poster Presenter,"Nov, 2005",Sigma Xi
-First place in section for student talks,"Nov, 2018",Entomological Society of America
-First place in Tufts Graduate Research Symposium 15 minute talk category,"Mar, 2019",Graduate School of Arts and Sciences
-Finalist for Outstanding Contributions to Undergraduate Education Award,"Mar, 2019",Graduate School of Arts and Sciences
+award,date,with,amount,tag
+First place in Tufts Graduate Research Symposium 5 minute talk category,2/24/17,Graduate School of Arts and Sciences,$100.00,presentation
+Second place in Tufts Graduate Research Symposium 15 minute talk category,2/18/16,Graduate School of Arts and Sciences,$50.00,presentation
+Tufts Institute for the Environment Fellowship,1/1/16,Tufts Institute for the Environment,"$4,975.00",grant
+Teaching Excellence award,3/1/09,UIUC School of Integrative Biology,NA,award
+PEEC Research Grant,3/1/09,"UIUC Program for Ecology, Evolution, and Conservation Biology",$850.00,grant
+PEEC Research Grant,3/1/09,"UIUC Program for Ecology, Evolution, and Conservation Biology",$850.00,grant
+Francis M. and Harlie M. Clark Research Support Grant,3/1/08,UIUC,"$2,500.00",grant
+Francis M. and Harlie M. Clark Research Support Grant,3/1/09,UIUC,"$2,500.00",grant
+Cynthia Lechner Biology Award,5/1/06,Whitman College,NA,award
+First place in M.S. graduate student poster competition,3/6/06,"Entomological Society of America, Pacific Branch",,presentation
+Superior Poster Presenter,11/3/05,Sigma Xi,,presentation
+First place in section for student talks,11/12/18,Entomological Society of America,$75.00,presentation
+First place in Tufts Graduate Research Symposium 15 minute talk category,3/1/19,Graduate School of Arts and Sciences,$100.00,presentation
+Finalist for Outstanding Contributions to Undergraduate Education Award,3/20/19,Graduate School of Arts and Sciences,NA,award
+Hertz Foundation Fellowship (rejected),10/31/14,Hertz Foundation,NA,failed
+Graduate Student Travel Fund (rstudio::conf),1/28/19,Graduate School of Arts and Sciences,$200.00,travel
+Graduate Student Travel Fund (Gordon Research Conference),2/11/17,Graduate School of Arts and Sciences,$400.00,travel
+Graduate Student Travel Fund (Gordon Research Conference),12/4/15,Graduate School of Arts and Sciences,$400.00,travel
+Sigma Xi Grant-in-Aid of Research (rejected),12/12/08,Sigma Xi,NA,failed
