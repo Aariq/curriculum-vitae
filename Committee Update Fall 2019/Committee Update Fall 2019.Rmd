@@ -52,27 +52,27 @@ awards <-
 ```
 
 
-# Recent Publications
+# Publications
 
 ```{r publications}
 scholar::get_publications("kPEDEO0AAAAJ") %>%
   arrange(desc(year)) %>%
-  filter(year >2018) %>% 
+  filter(journal != "Whitman College") %>% 
+  # filter(year >2018) %>% 
   detailed_entries(
     what = title,
     when = year,
     with = author,
     where = journal
   )
-
-# bibliography_entries(here("My Publications.bib"), title = NULL)
 ```
 
-# Recent Presentations
+# Conferences and Presentations
 
 ```{r}
 presentations %>%
-  filter(year(When) > 2018, Tag == "talk") %>% 
+  filter(When > ymd("2018-10-01"), Tag == "talk") %>% 
+  add_row(When = "2019-1-17", Title = "[no presentation]", Authors = NA, Conference = "rstudio::conf 2019") %>% 
   arrange(desc(When)) %>% 
   detailed_entries(
     what = Title,
@@ -133,13 +133,13 @@ awards %>%
 
 # Dissertation Outline
 
-1. Introduction (book chapter, published)
-2. ~~Direct contact sorptive extraction (published)~~ (first author, but in Nicole's dissertation already)
-3. Multivariate statistics method comparison
-4. Interactive effects of drought and herbivory (published)
-5. Leafhopper density impact on tea secondary metabolites
-6. Interactive effects of CO~2~ and herbivory ***or*** Climate impacts on leafhopper population growth.
-7. Conclusion
+1. Differential Changes in Tea Quality as Influenced by Insect Herbivory (book chapter, published)
+2. Using the right tool for the job: Partial least squares as an alternative to principle component regression for analysis of multivariate data in ecology.
+3. Interactive effects of drought severity and simulated herbivory on tea (*Camellia sinensis*) volatile and non-volatile metabolites	(published)
+4. Effects of tea green leafhopper (*Empoasca onukii*) density on metabolites in different tea cultivars with implications for tea quality.
+5. Interactive effects of elevated CO~2~ and insect herbivory on tea plant metabolism.
+6. Climate impacts on leafhopper population growth in tea fields
+6. Conclusion
 
 \pagebreak
 
@@ -170,8 +170,18 @@ awards %>%
 
 ## June/July
 
-- Submit leafhopper density paper
+- Submit leafhopper density paper (June 15)
 - Begin working on ***either*** CO~2~ x herbivory manuscript ***or*** leafhopper population growth manuscript
 
-## August/September
+## August
+
+- submit lefhopper population growth paper
+
+# October
+
+- Submit CO~2~ x Herbivory paper
+
+# December
+
+- Submit thesis
   
