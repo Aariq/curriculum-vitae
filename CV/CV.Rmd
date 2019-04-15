@@ -168,7 +168,7 @@ df %>%
 
 ```{r}
 presentations %>% 
-  filter(Tag == "talk") %>% 
+  filter(Tag %in% c("talk", "invited")) %>% 
   arrange(desc(When)) %>% 
   detailed_entries(what = Title,
                    when = glue("{month(When, label = TRUE)} {year(When)}"),
