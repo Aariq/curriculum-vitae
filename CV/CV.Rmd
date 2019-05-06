@@ -143,12 +143,12 @@ scholar::get_publications("kPEDEO0AAAAJ") %>%
 
 ```{r}
 df <- tribble(~what, ~when, ~with, ~where, ~why,
-              "Contributor to the `webchem` package by Eduard Szöcs et al.",
+              "Contributor to the webchem package by Eduard Szöcs et al.",
               2017,
               NA,
               "https://cran.r-project.org/web/packages/webchem/",
               "Contributed functions to scrape flavor percept data from flavor.net and to scrape retention indices from NIST given chemical identifier numbers",
-              "Author of `holodeck` package",
+              "Author of holodeck package",
               2018,
               NA,
               "https://github.com/Aariq/holodeck",
@@ -208,9 +208,12 @@ presentations %>%
 # Service
 
 **Manuscript Reviews**
+```{r}
+#set this up to pull from publoons some day.
+```
 
 - Journal of Chemical Ecology (1)
-- Ecological Entomology (1)
+- Ecological Entomology (2)
 
 ```{r}
 jobs %>%
