@@ -118,7 +118,7 @@ Urbana, IL
 2007--2010
 
 - Designed and conducted a multi-year field experiment
-- Analyzed data using generalized linear models and mixed effects models
+- Analyzed data using generalized linear mixed effects models
 
 Selected Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -133,7 +133,6 @@ Medford, MA
 
 <!--::: concise-->
 - Created companion [recitation section](https://github.com/Aariq/biotstatistics-recitation-2018) to Biostatistics course to teach introductory R with a focus on the Tidyverse
-- Converted homework assignments from SPSS to R, making use of R Markdown documents
 <!--:::-->
 
 ### Reproducible Workflows for Ecology Research 
@@ -144,9 +143,7 @@ Medford, MA
 
 Oct 2018
 
-
-- Developed [workshop](https://github.com/Aariq/Reproducibility-ERGO) on reproducibility in data analysis for ecologists
-- Demonstrated use of R projects, project organization, authoring R packages, GitHub, and data archiving
+- Developed [workshop](https://github.com/Aariq/Reproducibility-ERGO) for ecologists including use of R projects, project organization, authoring R packages, GitHub, and data archiving
 
 
 
@@ -165,6 +162,14 @@ Jan 2018
 
 Selected Presentations {data-icon=comment-alt}
 --------------------------------------------------------------------------------
+### Multivariate Statistics for Ecology and Baked Goods
+First place winning talk for the Tufts Graduate Student Symposium.
+
+Medford, MA
+
+March 2019
+
+**ER Scott**
 
 ### Can pests rescue tea quality from climate change?
 First place winning talk for Entomological Society of America Joint Meeting, Plant-Insect Ecosystems student competition
@@ -187,6 +192,8 @@ Aug 2017
 
 Selected Publications {data-icon=file}
 --------------------------------------------------------------------------------
+
+
 
 ### Combined impacts of prolonged drought and warming on plant size and foliar chemistry
 
