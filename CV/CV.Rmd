@@ -88,6 +88,7 @@ jobs %>%
   )
 ```
 
+\pagebreak
 # Teaching Experience
 
 ```{r}
@@ -99,11 +100,11 @@ jobs %>%
     when = When,
     with = With,
     where = Where,
-    why = Why
+    why = Why, .protect = FALSE
   )
 ```
 
-
+\pagebreak
 ## Invited Guest Lectures
 
 ```{r}
@@ -125,6 +126,7 @@ presentations %>%
   brief_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), with = with)
 ```
 
+\pagebreak
 # Publications
 
 ```{r publications}
@@ -202,7 +204,6 @@ presentations %>%
                    where = Location,
                    why = Award)
 ```
-
 
 
 # Service

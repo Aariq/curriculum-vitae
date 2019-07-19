@@ -2,42 +2,29 @@ Start,End,What,With,Where,Tag,Why
 1/1/17,10/15/18,NSF grant coordinator,Tufts University,"Medford, MA",research,Schedule and coordinate conference calls and meetings with collaborators
 ,,,,,,Maintain public-facing website for grant
 ,,,,,,Communicate research findings to general public via blog posts and social media
-6/15/14,Present,Graduate Researcher,Tufts University,"Medford, MA",research,"Conducted collaborative, interdisciplinary research on the effects of climate change and insect herbivory on tea metabolite profiles"
+6/15/14,Present,Graduate Researcher,Tufts University,"Medford, MA",research,"Conducted collaborative, interdisciplinary research on the effects of climate change and insect herbivory on tea metabolites"
 ,,,,,,"Designed and carried out field, greenhouse, and lab experiments at the Tea Research Institute in Hangzhou, China and at Tufts University"
 ,,,,,,"Developed and validated a novel, high-throughput method for sampling plant volatiles in the field"
 ,,,,,,"Mentored undergraduate assistants in computational, lab, and field experiments"
 7/1/10,12/31/10,Research Assistant,Colorado Natural Heritage Program,"Fort Collins, CO",research,Worked as part of a team to survey remote wetlands throughout Colorado
-,,,,,,Carried out soil and vegetation sampling protocols in the field
-,,,,,,Identified plants in the field when possible or with reference herbarium specimens when not
-8/1/07,5/15/10,Graduate Researcher,UIUC,"Urbana, IL",research,"Successfully completed research projects from the planning stages, through data collection, problem solving, and presentation of results"
-,,,,,,"Collected a variety of data in the field including long-term, repeated morphological measurements of plants, soil moisture and other soil data, and observations of herbivory"
-,,,,,,"Mastered various lab techniques to collect data on plant chemical characteristics such as digestibility, nutrient content, and defense chemical content"
-,,,,,,Analyzed data using the statistical package R
+,,,,,,Carried out soil and vegetation sampling protocols and plant identification in the field
+8/1/07,5/15/10,Graduate Researcher,UIUC,"Urbana, IL",research,Successfully completed research projects investigating the effects of soil nutrients and herbivory on compensatory growth and chemical defenses in a wildflower
 ,,,,,,Mentored undergraduate research assistants
 6/1/05,8/15/05,Research Intern,Bucknell University,"Lewisburg, PA",research,Collaborated with post-doctoral researcher to design a pilot study investigating host-race formation in a gall midge
-,,,,,,Collected galls from the field and reared larvae in the lab
-,,,,,,Designed and carried out mating and host-choice experiments in the lab
-,,,,,,Analyzed data and contributed to published manuscript
-7/15/16,12/15/18,Graduate Teaching Assistant BIO 0132 (Biostatistics),Tufts University,"Medford, MA",teaching,Served as a teaching assistant for three semesters
-,,,,,,Transitioned the course from using SPSS to R for statistical analyses
-,,,,,,Created curriculum for a required recitation to teach R for biostatistics (available on [GitHub](https://github.com/Aariq/biostats-recitation))
+,,,,,,"Designed and carried out field and lab experiments, analyzed data, and contributed to published manuscripts"
+7/15/16,12/15/18,Graduate Teaching Assistant BIO 0132 (Biostatistics),Tufts University,"Medford, MA",teaching,"Served as a teaching assistant for three semesters, over which I transitioned the course from using SPSS to R for statistical analyses"
+,,,,,,Created curriculum for a required recitation to teach R for biostatistics (available on \href{https://github.com/Aariq/biostats-recitation}{GitHub})
 ,,,,,,Created homework assignments using R Markdown documents
-,,,,,,Actively contributed to lecture course design through meetings with instructor
 1/15/15,5/15/15,Graduate Teaching Assistant BIO 0014 (Organisms and Populations),Tufts University,"Medford, MA",teaching,Mentored and managed undergraduate teaching assistants
 ,,,,,,Actively participated in course redesign
-,,,,,,Guided students through designing their own experiments
-,,,,,,Facilitated case-study based learning through discussion and quantitative reasoning
+,,,,,,Facilitated case-study based learning through discussion and quantitative reasoning and fuided students in designing their own experiments
 9/15/14,12/15/14,Graduate Teaching Assistant BIO 0013 (Cells and Organisms),Tufts University,"Medford, MA",teaching,Mentored and managed undergraduate teaching assistants
 ,,,,,,Created weekly quizzes to assess learning and preparation for lab
 1/15/11,5/15/14,Adjunct Biology Faculty,Front Range Community College,"Fort Collins, CO",teaching,Taught students with a wide variety of backgrounds and life goals introductory biology concepts in a guaranteed transfer credit course
-,,,,,,Created my own lab and lecture curriculum and engaged in revising and creating laboratory exercises used by all introductory biology sections
+,,,,,,Created and continuously revised my own curriculum and assessments and engaged in revising and creating laboratory exercises used by all introductory biology sections
 ,,,,,,"Actively participated in professional development by attending workshops, meeting individually with an instructional coach, and maintaining an active dialogue with supervisors"
-,,,,,,Created and consistently revised assessment materials to assess student learning fairly and accurately using item analysis and other techniques.
-1/15/10,5/15/10,Graduate Teaching Assistant IB 105 (Environmental Biology),UIUC,"Urbana, IL",teaching,Exposed students from a wide range of backgrounds to important environmental issues
-,,,,,,Encourages students to speak their minds in discussion and through active learning
-,,,,,,Challenged students to think critically about evaluating scientific arguments
-8/15/07,12/15/09,Graduate Teaching Assistant (Organismal and Evolutionary Bio),UIUC,"Urbana, IL",teaching,Communicated introductory level biology concepts to students through active learning
-,,,,,,Worked with diverse populations as part of the Merit program for high achieving students from under-served groups
+1/15/10,5/15/10,Graduate Teaching Assistant IB 105 (Environmental Biology),UIUC,"Urbana, IL",teaching,Encouraged students from a wide range of backgrounds to think critically about important environmental issues
+8/15/07,12/15/09,Graduate Teaching Assistant (Organismal and Evolutionary Bio),UIUC,"Urbana, IL",teaching,Worked with diverse populations as part of the Merit program for high achieving students from under-served groups
 ,,,,,,Received a Teaching Excellence Award from the School of Integrative Biology in March 2009
 6/1/03,8/1/03,Youth Programs Assistant,Lindsay Wildlife Experience,"Walnut Creek, CA",teaching,Researched issues relating to water pollution and integrated pest management (IPM)
 ,,,,,,Created presentations on water pollution and IPM to be presented by youth volunteers
@@ -77,5 +64,4 @@ Start,End,What,With,Where,Tag,Why
 ,,,,,,Communicate with PEEC treasurer on matters of budget.
 1/15/19,5/15/19,Graduate Teaching Assistant (Lecture TA for BIO 0014),Tufts University,"Medford, MA",teaching,Captured video recordings of live lecture and uploaded to course management site
 ,,,,,,Created and evaluated student assessments
-,,,,,,Provided students guidance and knowledge of course material during office hours
 1/15/19,5/15/19,Undergraduate Mentor (Bio 94),Tufts University,"Medford, MA",teaching,"Mentored undergraduate through the design, implementation, and write up of an experiment"
