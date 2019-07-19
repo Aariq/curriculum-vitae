@@ -213,7 +213,7 @@ presentations %>%
 ```
 
 - Journal of Chemical Ecology (1)
-- Ecological Entomology (2)
+- Ecological Entomology (3)
 
 ```{r}
 jobs %>%
