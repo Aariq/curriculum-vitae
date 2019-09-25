@@ -1,13 +1,13 @@
 ---
 name: Eric R Scott
-position: "PhD Candidate"
+position: ""
 address: "Department of Biology, Tufts University"
 phone: +1 925-788-9855
 www: ericrscott.com
 email: Eric.Scott@tufts.edu
 twitter: LeafyEricScott
 github: Aariq
-aboutme: Ecometabolomics, multivariate statistics, R
+aboutme: ""
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::moderncv:
@@ -35,7 +35,8 @@ jobs <-
     is.na(End) ~ glue("{year(Start)}--Present") %>% as.character(),
     year(Start) == year(End) ~ year(End) %>% as.character(),
     TRUE ~ glue("{year(Start)}--{year(End)}") %>% as.character()
-  ))
+  )) %>% 
+  mutate(End = if_else(is.na(End), today() + years(2), End)) #if no end date specified, set it to two years from now for sorting purposes, i.e. so jobs I'm still doing show up at top.
 ```
 
 ```{r presentations, include=FALSE}
@@ -59,18 +60,43 @@ awards <- awards.raw %>%
   arrange(desc(date))
 ```
 
-# Education
+```{r edu, include=FALSE}
+edu.raw <- read_csv(here("data", "education.csv"))
+edu <-
+  edu.raw %>% 
+  mutate(pi = if_else(!is.na(pi), glue("PI: {pi}"), as.character(NA)),
+         dissertation = glue("\\textbf{[dissertation]}", .open = "[", .close = "]")) %>% 
+  gather(dissertation, pi, key = "whytype", value = "why")
+edu["why"]
+```
+
+
+# Education 
 
 ```{r education}
-edu <- rorcid::orcid_educations("0000-0002-7430-7879")
-edu$`0000-0002-7430-7879`$`education-summary` %>% 
-  mutate(`end-date.year.value` = replace_na(`end-date.year.value`, "2019")) %>% 
-  detailed_entries(
-    what = `role-title`,
-    when = glue::glue("{`start-date.year.value`}--{`end-date.year.value`}"), 
-    with = organization.name,
-    where = organization.address.city
-  )
+#this code broke and I decided it's not worth doing through orcid since It's not going to change that often
+# edu <- rorcid::orcid_educations("0000-0002-7430-7879")
+# edu$`0000-0002-7430-7879`$`education-summary` %>% 
+#   mutate(`end-date.year.value` = replace_na(`end-date.year.value`, "2019")) %>% 
+#   detailed_entries(
+#     what = `role-title`,
+#     when = glue::glue("{`start-date.year.value`}--{`end-date.year.value`}"), 
+#     with = organization.name,
+#     where = organization.address.city
+#   )
+```
+
+
+
+```{r}
+detailed_entries(edu, 
+                 when = glue("{start_date}--{end_date}"),
+                 what = degree,
+                 where = location,
+                 with = university,
+                 why = why,
+                 .protect = FALSE)
+
 ```
 
 # Research Experience
@@ -78,17 +104,18 @@ edu$`0000-0002-7430-7879`$`education-summary` %>%
 ```{r research}
 jobs %>% 
   filter(Tag == "research") %>% 
-  arrange(desc(Start)) %>% 
+  # arrange(desc(Start)) %>%
+  arrange(desc(End)) %>% 
   detailed_entries(
     what = What,
     when = When,
     with = With,
     where = Where,
-    why = Why
+    why = Why,
+    .protect = FALSE
   )
 ```
 
-\pagebreak
 # Teaching Experience
 
 ```{r}
@@ -104,12 +131,12 @@ jobs %>%
   )
 ```
 
-\pagebreak
-## Invited Guest Lectures
+
+## Invited Guest Lectures and Outreach
 
 ```{r}
 presentations %>% 
-  filter(Tag == "lecture") %>% 
+  filter(Tag %in% c("lecture", "outreach")) %>% 
   arrange(desc(When)) %>% 
   detailed_entries(what = Title,
                    when = When,
@@ -126,7 +153,6 @@ presentations %>%
   brief_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), with = with)
 ```
 
-\pagebreak
 # Publications
 
 ```{r publications}
