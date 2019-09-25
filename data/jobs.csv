@@ -12,19 +12,19 @@ Start,End,What,With,Where,Tag,Why
 ,,,,,,Mentored undergraduate research assistants
 6/1/05,8/15/05,Research Intern,Bucknell University,"Lewisburg, PA",research,Collaborated with post-doctoral researcher to design a pilot study investigating host-race formation in a gall midge
 ,,,,,,"Designed and carried out field and lab experiments, analyzed data, and contributed to published manuscripts"
-7/15/16,12/15/18,Graduate Teaching Assistant BIO 0132 (Biostatistics),Tufts University,"Medford, MA",teaching,"Served as a teaching assistant for three semesters, over which I transitioned the course from using SPSS to R for statistical analyses"
+7/15/16,12/15/18,Biostatistics (Recitation Instructor),Tufts University,"Medford, MA",teaching,"Served as a teaching assistant for three semesters, over which I transitioned the course from using SPSS to R for statistical analyses"
 ,,,,,,Created curriculum for a required recitation to teach R for biostatistics (available on \href{https://github.com/Aariq/biostats-recitation}{GitHub})
 ,,,,,,Created homework assignments using R Markdown documents
-1/15/15,5/15/15,Graduate Teaching Assistant BIO 0014 (Organisms and Populations),Tufts University,"Medford, MA",teaching,Mentored and managed undergraduate teaching assistants
+1/15/15,5/15/15,Organisms and Populations (Lab TA),Tufts University,"Medford, MA",teaching,Mentored and managed undergraduate teaching assistants
 ,,,,,,Actively participated in course redesign
 ,,,,,,Facilitated case-study based learning through discussion and quantitative reasoning and fuided students in designing their own experiments
-9/15/14,12/15/14,Graduate Teaching Assistant BIO 0013 (Cells and Organisms),Tufts University,"Medford, MA",teaching,Mentored and managed undergraduate teaching assistants
+9/15/14,12/15/14,Cells and Organisms (Lab TA),Tufts University,"Medford, MA",teaching,Mentored and managed undergraduate teaching assistants
 ,,,,,,Created weekly quizzes to assess learning and preparation for lab
-1/15/11,5/15/14,Adjunct Biology Faculty,Front Range Community College,"Fort Collins, CO",teaching,Taught students with a wide variety of backgrounds and life goals introductory biology concepts in a guaranteed transfer credit course
+1/15/11,5/15/14,General Biology I (Adjunct Faculty),Front Range Community College,"Fort Collins, CO",teaching,Taught students with a wide variety of backgrounds and life goals introductory biology concepts in a guaranteed transfer credit course
 ,,,,,,Created and continuously revised my own curriculum and assessments and engaged in revising and creating laboratory exercises used by all introductory biology sections
 ,,,,,,"Actively participated in professional development by attending workshops, meeting individually with an instructional coach, and maintaining an active dialogue with supervisors"
-1/15/10,5/15/10,Graduate Teaching Assistant IB 105 (Environmental Biology),UIUC,"Urbana, IL",teaching,Encouraged students from a wide range of backgrounds to think critically about important environmental issues
-8/15/07,12/15/09,Graduate Teaching Assistant (Organismal and Evolutionary Bio),UIUC,"Urbana, IL",teaching,Worked with diverse populations as part of the Merit program for high achieving students from under-served groups
+1/15/10,5/15/10,Environmental Biology (Discussion TA),UIUC,"Urbana, IL",teaching,Encouraged students from a wide range of backgrounds to think critically about important environmental issues
+8/15/07,12/15/09,Organismal and Evolutionary Biology (Grad TA),UIUC,"Urbana, IL",teaching,Worked with diverse populations as part of the Merit program for high achieving students from under-served groups
 ,,,,,,Received a Teaching Excellence Award from the School of Integrative Biology in March 2009
 6/1/03,8/1/03,Youth Programs Assistant,Lindsay Wildlife Experience,"Walnut Creek, CA",teaching,Researched issues relating to water pollution and integrated pest management (IPM)
 ,,,,,,Created presentations on water pollution and IPM to be presented by youth volunteers
@@ -62,7 +62,7 @@ Start,End,What,With,Where,Tag,Why
 8/15/08,1/15/09,Graduate student symposium food committee chair,UIUC Graduate Students in Ecology and Evolutionary Biology (GEEB),"Champaign, IL",service,Assist in organizing the PEEC symposium.
 ,,,,,,Plan and provide breakfast and mid-morning snack for attendees of the symposium
 ,,,,,,Communicate with PEEC treasurer on matters of budget.
-1/15/19,5/15/19,Graduate Teaching Assistant (Lecture TA for BIO 0014),Tufts University,"Medford, MA",teaching,Captured video recordings of live lecture and uploaded to course management site
+1/15/19,5/15/19,Organisms and Populations (Lecture TA),Tufts University,"Medford, MA",teaching,Captured video recordings of live lecture and uploaded to course management site
 ,,,,,,Created and evaluated student assessments
-1/15/19,5/15/19,Undergraduate Mentor (Bio 94),Tufts University,"Medford, MA",teaching,"Mentored undergraduate through the design, implementation, and write up of an experiment"
+1/15/19,5/15/19,Undergraduate Mentor,Tufts University,"Medford, MA",teaching,"Mentored undergraduate through the design, implementation, and write up of an experiment"
 7/15/19,12/15/20,Graduate Research Assistant,Crone Lab,Tufts University,research,Developed the R package \emph{bumbl} which provides functions for modeling bumblebee colony growth.
