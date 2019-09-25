@@ -136,7 +136,7 @@ jobs %>%
   )
 ```
 
-
+\pagebreak
 ## Invited Guest Lectures and Outreach
 
 ```{r}
@@ -157,7 +157,7 @@ presentations %>%
   filter(tag != "failed" & tag != "travel") %>% 
   brief_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), with = with)
 ```
-
+\pagebreak
 # Publications
 
 ```{r publications}
@@ -247,7 +247,7 @@ presentations %>%
                    why = Award)
 ```
 
-
+\pagebreak
 # Service
 
 **Manuscript Reviews**
