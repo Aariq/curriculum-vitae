@@ -43,7 +43,8 @@ jobs <-
 presentations.raw <- read_csv(here("data", "presentations.csv"))
 presentations <- 
   presentations.raw %>% 
-  mutate(When = mdy(When))
+  mutate(When = mdy(When)) %>% 
+  filter(When < today()) #exclude upcoming talks
 ```
 
 ```{r prof-devel, include=FALSE}
@@ -143,7 +144,7 @@ presentations %>%
   filter(Tag %in% c("lecture", "outreach")) %>% 
   arrange(desc(When)) %>% 
   detailed_entries(what = Title,
-                   when = When,
+                   when = glue("{month(When, label = TRUE)} {year(When)}"),
                    with = Conference,
                    where = Location,
                    why = Award)
@@ -215,7 +216,8 @@ presentations %>%
                    when = glue("{month(When, label = TRUE)} {year(When)}"),
                    with = Conference,
                    where = Location,
-                   why = Award)
+                   why = Award,
+                   .protect = FALSE)
 ```
 
 ## Posters
@@ -225,10 +227,11 @@ presentations %>%
   filter(Tag == "poster") %>% 
   arrange(desc(When)) %>% 
   detailed_entries(what = Title,
-                   when = When,
+                   when = glue("{month(When, label = TRUE)} {year(When)}"),
                    with = Conference,
                    where = Location,
-                   why = Award)
+                   why = Award,
+                   .protect = FALSE)
 ```
 
 ## Other
@@ -238,7 +241,7 @@ presentations %>%
   filter(Tag == "workshop") %>% 
   arrange(desc(When)) %>% 
   detailed_entries(what = Title,
-                   when = When,
+                   when = glue("{month(When, label = TRUE)} {year(When)}"),
                    with = Conference,
                    where = Location,
                    why = Award)
@@ -273,7 +276,7 @@ jobs %>%
 development %>% 
   brief_entries(
     what = title,
-    when = date,
+    when = glue("{month(date, label = TRUE)} {year(date)}"),
     with = location
   )
 ```
