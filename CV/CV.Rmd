@@ -116,6 +116,10 @@ jobs %>%
   )
 ```
 
+<!--# Teaching Interests
+A sentence or two about the sorts of courses I'd like to teach.  Tailor to each job application
+-->
+
 # Teaching Experience
 
 ```{r}
@@ -171,16 +175,25 @@ scholar::get_publications("kPEDEO0AAAAJ") %>%
 
 ```{r}
 df <- tribble(~what, ~when, ~with, ~where, ~why,
-              "Contributor to the webchem package by Eduard Szöcs et al.",
+              "webchem: retrieve chemical information from the web",
               2017,
-              NA,
+              "E Szöcs, D Muench, J Ranke, ER Scott, J Stanstrup, R Allaway, Tamas Stirling",
               "https://cran.r-project.org/web/packages/webchem/",
-              "Contributed functions to scrape flavor percept data from flavor.net and to scrape retention indices from NIST given chemical identifier numbers",
-              "Author of holodeck package",
+              "Contributor",
+              
+              "holodeck: A tidy interface for simulating multivariate data",
               2018,
-              NA,
-              "https://github.com/Aariq/holodeck",
-              "A Tidy Interface for Simulating Multivariate Data"
+              "ER Scott",
+              "https://cran.r-project.org/web/packages/holodeck/",
+              "Author and maintainer",
+              
+              
+              "bumbl: Tools for modeling bumblebee colony growth",
+              2019,
+              "ER Scott, E Crone",
+              "https://github.com/Aariq/bumbl",
+              "Author and maintainer"
+              
               )
 ```
 
