@@ -14,6 +14,12 @@ output:
     theme: classic
 ---
 
+```{r eval=FALSE, include=FALSE}
+# To update CV on my website, run the following code in the console:
+rmarkdown::render("CV.Rmd", output_file = "/Users/scottericr/Documents/Blogdown/My Website/static/files/Eric Scott cv.pdf")
+```
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae)
@@ -187,7 +193,6 @@ df <- tribble(~what, ~when, ~with, ~where, ~why,
               "ER Scott",
               "https://cran.r-project.org/web/packages/holodeck/",
               "Author and maintainer",
-              
               
               "bumbl: Tools for modeling bumblebee colony growth",
               2019,
