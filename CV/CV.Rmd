@@ -94,7 +94,6 @@ edu["why"]
 ```
 
 
-
 ```{r}
 detailed_entries(edu, 
                  when = glue("{start_date}--{end_date}"),
@@ -143,18 +142,6 @@ jobs %>%
 ```
 
 \pagebreak
-## Invited Guest Lectures and Outreach
-
-```{r}
-presentations %>% 
-  filter(Tag %in% c("lecture", "outreach")) %>% 
-  arrange(desc(When)) %>% 
-  detailed_entries(what = Title,
-                   when = glue("{month(When, label = TRUE)} {year(When)}"),
-                   with = Conference,
-                   where = Location,
-                   why = Award)
-```
 
 # Awards and Honors
 
@@ -163,11 +150,11 @@ presentations %>%
   filter(tag != "failed" & tag != "travel") %>% 
   brief_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), with = with)
 ```
-\pagebreak
+
 # Publications
 
 ```{r publications}
-scholar::get_publications("kPEDEO0AAAAJ") %>%
+scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
   arrange(desc(year)) %>%
   detailed_entries(
     what = title,
@@ -211,7 +198,7 @@ df %>%
 
 # Presentations
 
-## Talks
+## Research Talks
 
 ```{r}
 presentations %>% 
@@ -239,7 +226,20 @@ presentations %>%
                    .protect = FALSE)
 ```
 
-## Other
+## Invited Guest Lectures and Outreach
+
+```{r}
+presentations %>% 
+  filter(Tag %in% c("lecture", "outreach")) %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(what = Title,
+                   when = glue("{month(When, label = TRUE)} {year(When)}"),
+                   with = Conference,
+                   where = Location,
+                   why = Award)
+```
+\pagebreak
+## Workshops
 
 ```{r}
 presentations %>% 
@@ -252,7 +252,6 @@ presentations %>%
                    why = Award)
 ```
 
-\pagebreak
 # Service
 
 **Manuscript Reviews**
