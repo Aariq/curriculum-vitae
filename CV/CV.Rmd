@@ -15,6 +15,12 @@ output:
 ---
 
 ```{r eval=FALSE, include=FALSE}
+# Remember to spell check!!
+data_files <- list.files(here("data"), pattern = ".csv", full.names = TRUE)
+spelling::spell_check_files(c("CV.Rmd", data_files))
+```
+
+```{r eval=FALSE, include=FALSE}
 # To update CV on my website, run the following code in the console:
 rmarkdown::render("CV.Rmd", output_file = "/Users/scottericr/Documents/Blogdown/My Website/static/files/Eric Scott cv.pdf")
 ```
