@@ -149,11 +149,20 @@ jobs %>%
 
 \pagebreak
 
+# Grants
+
+```{r}
+awards %>% 
+  filter(tag == "grant") %>% 
+  detailed_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), why = amount)
+
+```
+
 # Awards and Honors
 
 ```{r}
  awards %>% 
-  filter(tag != "failed" & tag != "travel") %>% 
+  filter(!tag %in% c("failed", "travel", "grant")) %>% 
   brief_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), with = with)
 ```
 
