@@ -82,6 +82,11 @@ edu <-
   gather(dissertation, pi, key = "whytype", value = "why")
 edu["why"]
 ```
+```{r outreach, include=FALSE}
+outreach.raw <- read_csv(here("data", "outreach.csv"))
+outreach <- outreach.raw %>% mutate(sortdate = mdy(sortdate))
+
+```
 
 
 # Education 
@@ -147,7 +152,18 @@ jobs %>%
   )
 ```
 
-\pagebreak
+## Guest Lectures
+
+```{r}
+presentations %>% 
+  filter(Tag %in% c("lecture")) %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(what = Title,
+                   when = glue("{month(When, label = TRUE)} {year(When)}"),
+                   with = Conference,
+                   where = Location,
+                   why = Award)
+```
 
 # Grants
 
@@ -236,6 +252,8 @@ df %>%
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
 
+\pagebreak
+
 # Presentations
 
 ## Research Talks
@@ -266,30 +284,16 @@ presentations %>%
                    .protect = FALSE)
 ```
 
-## Invited Guest Lectures and Outreach
+# Outreach
 
 ```{r}
-presentations %>% 
-  filter(Tag %in% c("lecture", "outreach")) %>% 
-  arrange(desc(When)) %>% 
-  detailed_entries(what = Title,
-                   when = glue("{month(When, label = TRUE)} {year(When)}"),
-                   with = Conference,
+outreach %>%
+  arrange(desc(sortdate)) %>%
+  detailed_entries(when = When,
+                   what = Title,
+                   with = Organization,
                    where = Location,
-                   why = Award)
-```
-
-## Workshops
-
-```{r}
-presentations %>% 
-  filter(Tag == "workshop") %>% 
-  arrange(desc(When)) %>% 
-  detailed_entries(what = Title,
-                   when = glue("{month(When, label = TRUE)} {year(When)}"),
-                   with = Conference,
-                   where = Location,
-                   why = Award)
+                   why = Description)
 ```
 
 # Service
@@ -312,6 +316,18 @@ jobs %>%
     where = Where,
     why = Why
   )
+```
+## Presented Workshops
+
+```{r}
+presentations %>% 
+  filter(Tag == "workshop") %>% 
+  arrange(desc(When)) %>% 
+  detailed_entries(what = Title,
+                   when = glue("{month(When, label = TRUE)} {year(When)}"),
+                   with = Conference,
+                   where = Location,
+                   why = Award)
 ```
 
 # Professional Development
