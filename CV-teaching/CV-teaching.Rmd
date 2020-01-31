@@ -177,6 +177,8 @@ awards %>%
 
 ```
 
+\pagebreak
+
 # Awards and Honors
 
 ```{r}
@@ -255,7 +257,6 @@ df %>%
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
 
-\pagebreak
 
 # Presentations
 
@@ -298,7 +299,7 @@ outreach %>%
                    where = Location,
                    why = Description)
 ```
-\pagebreak
+
 # Service
 
 **Manuscript Reviews**
