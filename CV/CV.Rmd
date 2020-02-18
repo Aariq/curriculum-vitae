@@ -305,6 +305,7 @@ outreach %>%
 
 - Journal of Chemical Ecology (1)
 - Ecological Entomology (3)
+- International Journal of Climatology (1)
 
 ```{r}
 jobs %>%
