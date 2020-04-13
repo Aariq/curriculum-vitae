@@ -1,5 +1,5 @@
 ---
-name: Eric R Scott
+name: "Eric R. Scott"
 position: ""
 address: "Department of Biology, Tufts University"
 phone: +1 925-788-9855
@@ -34,6 +34,9 @@ library(lubridate)
 library(here)
 library(readxl)
 library(glue)
+library(conflicted)
+conflict_prefer("filter", "dplyr")
+conflict_prefer("here", "here")
 ```
 
 ```{r experience, inclue=FALSE}
@@ -159,7 +162,7 @@ presentations %>%
   filter(Tag %in% c("lecture")) %>% 
   arrange(desc(When)) %>% 
   detailed_entries(what = Title,
-                   when = glue("{month(When, label = TRUE)} {year(When)}"),
+                   when = glue("{month(When, label = TRUE)} {year(When)}") %>% as.character(),
                    with = Conference,
                    where = Location,
                    why = Award)
@@ -168,10 +171,14 @@ presentations %>%
 # Grants
 
 ```{r}
-awards %>% 
-  filter(tag == "grant") %>% 
-  detailed_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), why = amount)
-
+awards %>%
+  filter(tag == "grant") %>%
+  detailed_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"),
+                   why = amount) %>% 
+  mutate_all(as.character) %>% 
+  mutate(with = as.character(with),
+         when = as.character(when),
+         where = as.character(where))
 ```
 
 # Awards and Honors
@@ -184,33 +191,33 @@ awards %>%
 
 # Publications
 
-^\*^ indicates undergraduate mentee author  
+<!-- ^\*^ indicates undergraduate mentee author   -->
 
 ```{r publications}
 
 scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
   
   # in review
-  add_row(
-    title = "Changes in tea plant secondary metabolite profiles as a function of leafhopper density and damage",
-    author = "ER Scott, X Li, JP Wei, N Kfoury, J Morimoto, MM Guo*, A Agyei*, A Robbat Jr, S Ahmed, SB Cash, TS Griffin, JR Stepp, WY Han, CM Orians",
-    journal = "Frontiers in Plant Science",
-    number = " ",
-    cites = 0,
-    year = "in review",
-    cid = NA,
-    pubid = NA
-    ) %>% 
-  add_row(
-    title = "Using the right tool for the job: understanding the difference between unsupervised and supervised analyses of multivariate ecological data",
-    author = "ER Scott, EE Crone",
-    journal = "Oecologia",
-    number = " ",
-    cites = 0,
-    year = "in review",
-    cid = NA,
-    pubid = NA
-  ) %>% 
+  # dplyr::add_row(
+  #   title = "Changes in tea plant secondary metabolite profiles as a function of leafhopper density and damage",
+  #   author = "ER Scott, X Li, JP Wei, N Kfoury, J Morimoto, MM Guo*, A Agyei*, A Robbat Jr, S Ahmed, SB Cash, TS Griffin, JR Stepp, WY Han, CM Orians",
+  #   journal = "Frontiers in Plant Science",
+  #   number = " ",
+  #   cites = 0,
+  #   year = "in review",
+  #   cid = NA,
+  #   pubid = NA
+  #   ) %>% 
+  # add_row(
+  #   title = "Using the right tool for the job: understanding the difference between unsupervised and supervised analyses of multivariate ecological data",
+  #   author = "ER Scott, EE Crone",
+  #   journal = "Oecologia",
+  #   number = " ",
+  #   cites = 0,
+  #   year = "in review",
+  #   cid = NA,
+  #   pubid = NA
+  # ) %>% 
   arrange(desc(year)) %>%
   detailed_entries(
     what = title,
@@ -226,7 +233,7 @@ scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
 ```{r}
 df <- tribble(~what, ~when, ~with, ~where, ~why,
               "webchem: retrieve chemical information from the web",
-              2017,
+              2020,
               "E Szöcs, D Muench, J Ranke, ER Scott, J Stanstrup, R Allaway, Tamas Stirling",
               "https://cran.r-project.org/web/packages/webchem/",
               "Contributor and maintainer",
@@ -252,7 +259,6 @@ df %>%
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
 
-\pagebreak
 
 # Presentations
 
@@ -295,7 +301,7 @@ outreach %>%
                    where = Location,
                    why = Description)
 ```
-\pagebreak
+
 # Service
 
 **Manuscript Reviews**
@@ -318,6 +324,9 @@ jobs %>%
     why = Why
   )
 ```
+
+\pagebreak
+
 ## Presented Workshops
 
 ```{r}
