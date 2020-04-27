@@ -1,0 +1,32 @@
+---
+title: "Updated list of talks"
+output:
+  html_document:
+    df_print: paged
+---
+
+Export spreadsheet of talks and conferences since may 2019
+
+```{r}
+library(tidyverse)
+library(here)
+library(lubridate)
+library(conflicted)
+conflict_prefer("filter", "dplyr")
+conflict_prefer("here", "here")
+```
+
+```{r}
+talks <- read_csv(here("data", "presentations.csv"))
+```
+```{r}
+out <- talks %>% 
+  mutate(When = mdy(When)) %>% 
+  filter(When > mdy("05/01/2019")) %>% 
+  filter(Tag !="lecture") %>% 
+  mutate(Title = str_remove_all(Title, "\\\\.+\\{") %>% str_remove_all("\\}")) %>% 
+  select(-Tag)
+  
+write_csv(out, here("talks for NSF 2020.csv"))
+```
+
