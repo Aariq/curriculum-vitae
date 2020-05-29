@@ -149,7 +149,6 @@ presentations %>%
                    why = Award)
 ```
 
-\pagebreak
 
 # Research Experience
 
@@ -177,7 +176,7 @@ awards %>%
 
 ```
 
-\pagebreak
+
 
 # Awards and Honors
 
@@ -231,7 +230,7 @@ scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
 ```{r}
 df <- tribble(~what, ~when, ~with, ~where, ~why,
               "webchem: retrieve chemical information from the web",
-              2017,
+              2020,
               "E Szöcs, D Muench, J Ranke, ER Scott, J Stanstrup, R Allaway, Tamas Stirling",
               "https://cran.r-project.org/web/packages/webchem/",
               "Contributor and maintainer",
@@ -252,11 +251,13 @@ df <- tribble(~what, ~when, ~with, ~where, ~why,
 ```
 
 ```{r}
-df %>% 
+newrow <- df[1,] %>% mutate(why = "Recipient of R Consortium grant")
+bind_rows(df, newrow) %>% 
   arrange(desc(when)) %>% 
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
 
+\pagebreak
 
 # Presentations
 
@@ -299,6 +300,8 @@ outreach %>%
                    where = Location,
                    why = Description)
 ```
+
+\pagebreak
 
 # Service
 

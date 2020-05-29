@@ -23,6 +23,7 @@ spelling::spell_check_files(c("CV.Rmd", data_files))
 ```{r eval=FALSE, include=FALSE}
 # To update CV on my website, run the following code in the console:
 rmarkdown::render("CV.Rmd", output_file = "/Users/scottericr/Documents/Blogdown/My Website/static/files/Eric Scott cv.pdf")
+rmarkdown::render("CV.Rmd", output_file = "/Users/scottericr/Documents/Blogdown/website2/static/files/Eric Scott cv.pdf")
 ```
 
 
@@ -306,9 +307,10 @@ outreach %>%
 
 **Manuscript Reviews**
 ```{r}
-#set this up to pull from publoons some day.
+#set this up to pull from publons some day.
 ```
 
+- Agronomy (1)
 - Journal of Chemical Ecology (1)
 - Ecological Entomology (3)
 - International Journal of Climatology (1)
