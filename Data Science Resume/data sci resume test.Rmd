@@ -13,6 +13,7 @@ Aside
 
 
 ![Eric Scott](/Users/scottericr/Documents/curriculum-vitae/data/eric.png){width=80%}
+<!-- ![Eric Scott](`r here::here("eric.png")`) -->
 
 PhD student specializing in multivariate data analysis, metabolomics, reproducible analyses, and teaching. On the market for data science and postdoc positions.
 
