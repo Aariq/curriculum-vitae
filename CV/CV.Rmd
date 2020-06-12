@@ -260,6 +260,7 @@ df %>%
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
 
+\pagebreak
 
 # Presentations
 
@@ -303,6 +304,8 @@ outreach %>%
                    why = Description)
 ```
 
+\pagebreak
+
 # Service
 
 **Manuscript Reviews**
@@ -327,7 +330,7 @@ jobs %>%
   )
 ```
 
-\pagebreak
+
 
 ## Presented Workshops
 
