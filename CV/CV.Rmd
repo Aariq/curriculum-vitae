@@ -1,10 +1,10 @@
 ---
-name: "Eric R. Scott"
-position: ""
-address: "Department of Biology, Tufts University"
+name: "Eric R. Scott, PhD"
+position: "Postdoctoral Associate"
+address: "University of Florida"
 phone: +1 925-788-9855
 www: ericrscott.com
-email: Eric.Scott@tufts.edu
+email: ericscott@ufl.edu
 twitter: LeafyEricScott
 github: Aariq
 aboutme: ""
@@ -22,7 +22,6 @@ spelling::spell_check_files(c("CV.Rmd", data_files))
 
 ```{r eval=FALSE, include=FALSE}
 # To update CV on my website, run the following code in the console:
-rmarkdown::render("CV.Rmd", output_file = "/Users/scottericr/Documents/Blogdown/My Website/static/files/Eric Scott cv.pdf")
 rmarkdown::render("CV.Rmd", output_file = "/Users/scottericr/Documents/Blogdown/website2/static/files/Eric Scott cv.pdf")
 ```
 
@@ -192,33 +191,12 @@ awards %>%
 
 # Publications
 
-<!-- ^\*^ indicates undergraduate mentee author   -->
+^\*^ indicates undergraduate mentee author
 
 ```{r publications}
-
 scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
-  
-  # in review
-  # dplyr::add_row(
-  #   title = "Changes in tea plant secondary metabolite profiles as a function of leafhopper density and damage",
-  #   author = "ER Scott, X Li, JP Wei, N Kfoury, J Morimoto, MM Guo*, A Agyei*, A Robbat Jr, S Ahmed, SB Cash, TS Griffin, JR Stepp, WY Han, CM Orians",
-  #   journal = "Frontiers in Plant Science",
-  #   number = " ",
-  #   cites = 0,
-  #   year = "in review",
-  #   cid = NA,
-  #   pubid = NA
-  #   ) %>% 
-  # add_row(
-  #   title = "Using the right tool for the job: understanding the difference between unsupervised and supervised analyses of multivariate ecological data",
-  #   author = "ER Scott, EE Crone",
-  #   journal = "Oecologia",
-  #   number = " ",
-  #   cites = 0,
-  #   year = "in review",
-  #   cid = NA,
-  #   pubid = NA
-  # ) %>% 
+  mutate(author = str_replace_all(author, "MM Guo", "MM Guo*"),
+         author = str_replace_all(author, "A Agyei", "A Agyei*")) %>% 
   arrange(desc(year)) %>%
   detailed_entries(
     what = title,
@@ -226,7 +204,6 @@ scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
     with = author,
     where = journal
   )
-# bibliography_entries(here("My Publications.bib"), title = NULL)
 ```
 
 ## Software
@@ -260,7 +237,7 @@ df %>%
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
 
-\pagebreak
+
 
 # Presentations
 
@@ -304,8 +281,6 @@ outreach %>%
                    why = Description)
 ```
 
-\pagebreak
-
 # Service
 
 **Manuscript Reviews**
@@ -317,6 +292,7 @@ outreach %>%
 - Journal of Chemical Ecology (1)
 - Ecological Entomology (3)
 - International Journal of Climatology (1)
+- Oecologia (1)
 
 ```{r}
 jobs %>%
@@ -329,8 +305,6 @@ jobs %>%
     why = Why
   )
 ```
-
-
 
 ## Presented Workshops
 
