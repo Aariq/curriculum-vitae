@@ -297,13 +297,22 @@ outreach %>%
 ```{r}
 jobs %>%
   filter(Tag == "service") %>% 
-  detailed_entries(
-    what = What,
-    when = When,
-    with = With,
-    where = Where,
-    why = Why
-  )
+  group_by(What) %>% 
+  summarize(across(c(When, With, End), first)) %>% 
+  arrange(desc(End)) %>% 
+    brief_entries(
+      what = What,
+      when = When,
+      with = With
+    )
+  # detailed_entries(
+  #   what = What,
+  #   when = When,
+  #   with = With,
+  #   where = Where,
+  #   why = Why
+  # )
+
 ```
 
 ## Presented Workshops
@@ -312,11 +321,13 @@ jobs %>%
 presentations %>% 
   filter(Tag == "workshop") %>% 
   arrange(desc(When)) %>% 
-  detailed_entries(what = Title,
-                   when = glue("{month(When, label = TRUE)} {year(When)}"),
-                   with = Conference,
-                   where = Location,
-                   why = Award)
+  brief_entries(
+    what = Title,
+    when = glue("{month(When, label = TRUE)} {year(When)}"),
+    with = Conference,
+    # where = Location,
+    # why = Award
+  )
 ```
 
 # Professional Development
