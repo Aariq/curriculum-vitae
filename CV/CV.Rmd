@@ -334,6 +334,7 @@ presentations %>%
 
 ```{r}
 development %>% 
+  arrange(desc(date)) %>% 
   brief_entries(
     what = title,
     when = glue("{month(date, label = TRUE)} {year(date)}"),
