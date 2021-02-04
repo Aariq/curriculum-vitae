@@ -14,6 +14,8 @@ output:
     theme: classic
 ---
 
+Updated `r Sys.Date()`
+
 ```{r eval=FALSE, include=FALSE}
 # Remember to spell check!!
 data_files <- list.files(here("data"), pattern = ".csv", full.names = TRUE)
@@ -24,7 +26,6 @@ spelling::spell_check_files(c("CV.Rmd", data_files))
 # To update CV on my website, run the following code in the console:
 rmarkdown::render("CV.Rmd", output_file = "/Users/scottericr/Documents/Blogdown/website2/static/files/Eric Scott cv.pdf")
 ```
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
@@ -85,6 +86,7 @@ edu <-
   gather(dissertation, pi, key = "whytype", value = "why")
 edu["why"]
 ```
+
 ```{r outreach, include=FALSE}
 outreach.raw <- read_csv(here("data", "outreach.csv"))
 outreach <- outreach.raw %>% mutate(sortdate = mdy(sortdate))
@@ -93,20 +95,6 @@ outreach <- outreach.raw %>% mutate(sortdate = mdy(sortdate))
 
 
 # Education 
-
-```{r education}
-#this code broke and I decided it's not worth doing through orcid since It's not going to change that often
-# edu <- rorcid::orcid_educations("0000-0002-7430-7879")
-# edu$`0000-0002-7430-7879`$`education-summary` %>% 
-#   mutate(`end-date.year.value` = replace_na(`end-date.year.value`, "2019")) %>% 
-#   detailed_entries(
-#     what = `role-title`,
-#     when = glue::glue("{`start-date.year.value`}--{`end-date.year.value`}"), 
-#     with = organization.name,
-#     where = organization.address.city
-#   )
-```
-
 
 ```{r}
 detailed_entries(edu, 
@@ -305,14 +293,6 @@ jobs %>%
       when = When,
       with = With
     )
-  # detailed_entries(
-  #   what = What,
-  #   when = When,
-  #   with = With,
-  #   where = Where,
-  #   why = Why
-  # )
-
 ```
 
 ## Presented Workshops
