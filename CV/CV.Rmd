@@ -279,8 +279,9 @@ outreach %>%
 - Agronomy (1)
 - Journal of Chemical Ecology (1)
 - Ecological Entomology (3)
-- International Journal of Climatology (1)
+- International Journal of Climatology (2)
 - Oecologia (1)
+- Frontiers in Cellular and Infection Microbiology (1)
 
 ```{r}
 jobs %>%
