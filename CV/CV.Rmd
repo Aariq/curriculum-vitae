@@ -93,8 +93,7 @@ outreach <- outreach.raw %>% mutate(sortdate = mdy(sortdate))
 
 ```
 
-
-# Education 
+# Education
 
 ```{r}
 detailed_entries(edu, 
@@ -124,25 +123,15 @@ jobs %>%
   )
 ```
 
+```{=html}
 <!--# Teaching Interests
 A sentence or two about the sorts of courses I'd like to teach.  Tailor to each job application
 -->
+```# Teaching Experience
 
-# Teaching Experience
-
-```{r}
-jobs %>%
-  filter(Tag == "teaching", year(Start) > 2005) %>%
-  arrange(desc(Start)) %>% 
-  detailed_entries(
-    what = What,
-    when = When,
-    with = With,
-    where = Where,
-    why = Why, .protect = FALSE
-  )
+```f3175f2a-e8a0-4436-be12-b33925b6d220
+31b8e172-b470-440e-83d8-e6b185028602:dAB5AHAAZQA6AFoAZwBBAHoAQQBEAEUAQQBOAHcAQQAxAEEARwBZAEEATQBnAEIAaABBAEMAMABBAFoAUQBBADQAQQBHAEUAQQBNAEEAQQB0AEEARABRAEEATgBBAEEAegBBAEQAWQBBAEwAUQBCAGkAQQBHAFUAQQBNAFEAQQB5AEEAQwAwAEEAWQBnAEEAegBBAEQATQBBAE8AUQBBAHkAQQBEAFUAQQBZAGcAQQAyAEEARwBRAEEATQBnAEEAeQBBAEQAQQBBAAoAcABvAHMAaQB0AGkAbwBuADoATQB3AEEAMABBAEQAWQBBAE0AUQBBAD0ACgBwAHIAZQBmAGkAeAA6AAoAcwBvAHUAcgBjAGUAOgBZAEEAQgBnAEEARwBBAEEAZQB3AEIAeQBBAEgAMABBAEMAZwBCAHEAQQBHADgAQQBZAGcAQgB6AEEAQwBBAEEASgBRAEEAKwBBAEMAVQBBAEMAZwBBAGcAQQBDAEEAQQBaAGcAQgBwAEEARwB3AEEAZABBAEIAbABBAEgASQBBAEsAQQBCAFUAQQBHAEUAQQBaAHcAQQBnAEEARAAwAEEAUABRAEEAZwBBAEMASQBBAGQAQQBCAGwAQQBHAEUAQQBZAHcAQgBvAEEARwBrAEEAYgBnAEIAbgBBAEMASQBBAEwAQQBBAGcAQQBIAGsAQQBaAFEAQgBoAEEASABJAEEASwBBAEIAVABBAEgAUQBBAFkAUQBCAHkAQQBIAFEAQQBLAFEAQQBnAEEARAA0AEEASQBBAEEAeQBBAEQAQQBBAE0AQQBBADEAQQBDAGsAQQBJAEEAQQBsAEEARAA0AEEASgBRAEEASwBBAEMAQQBBAEkAQQBCAGgAQQBIAEkAQQBjAGcAQgBoAEEARwA0AEEAWgB3AEIAbABBAEMAZwBBAFoAQQBCAGwAQQBIAE0AQQBZAHcAQQBvAEEARgBNAEEAZABBAEIAaABBAEgASQBBAGQAQQBBAHAAQQBDAGsAQQBJAEEAQQBsAEEARAA0AEEASgBRAEEAZwBBAEEAbwBBAEkAQQBBAGcAQQBHAFEAQQBaAFEAQgAwAEEARwBFAEEAYQBRAEIAcwBBAEcAVQBBAFoAQQBCAGYAQQBHAFUAQQBiAGcAQgAwAEEASABJAEEAYQBRAEIAbABBAEgATQBBAEsAQQBBAEsAQQBDAEEAQQBJAEEAQQBnAEEAQwBBAEEAZAB3AEIAbwBBAEcARQBBAGQAQQBBAGcAQQBEADAAQQBJAEEAQgBYAEEARwBnAEEAWQBRAEIAMABBAEMAdwBBAEMAZwBBAGcAQQBDAEEAQQBJAEEAQQBnAEEASABjAEEAYQBBAEIAbABBAEcANABBAEkAQQBBADkAQQBDAEEAQQBWAHcAQgBvAEEARwBVAEEAYgBnAEEAcwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgAzAEEARwBrAEEAZABBAEIAbwBBAEMAQQBBAFAAUQBBAGcAQQBGAGMAQQBhAFEAQgAwAEEARwBnAEEATABBAEEASwBBAEMAQQBBAEkAQQBBAGcAQQBDAEEAQQBkAHcAQgBvAEEARwBVAEEAYwBnAEIAbABBAEMAQQBBAFAAUQBBAGcAQQBGAGMAQQBhAEEAQgBsAEEASABJAEEAWgBRAEEAcwBBAEEAbwBBAEkAQQBBAGcAQQBDAEEAQQBJAEEAQgAzAEEARwBnAEEAZQBRAEEAZwBBAEQAMABBAEkAQQBCAFgAQQBHAGcAQQBlAFEAQQBzAEEAQwBBAEEATABnAEIAdwBBAEgASQBBAGIAdwBCADAAQQBHAFUAQQBZAHcAQgAwAEEAQwBBAEEAUABRAEEAZwBBAEUAWQBBAFEAUQBCAE0AQQBGAE0AQQBSAFEAQQBLAEEAQwBBAEEASQBBAEEAcABBAEEAbwBBAFkAQQBCAGcAQQBHAEEAQQAKAHMAdQBmAGYAaQB4ADoA:31b8e172-b470-440e-83d8-e6b185028602
 ```
-
 ## Guest Lectures
 
 ```{r}
@@ -198,6 +187,12 @@ scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
 
 ```{r}
 df <- tribble(~what, ~when, ~with, ~where, ~why,
+              "bumbl: Tools for modeling bumblebee colony growth",
+              2021,
+              "ER Scott, E Crone",
+              "https://cran.r-project.org/package=bumbl",
+              "Author and maintainer",
+              
               "webchem: retrieve chemical information from the web",
               2020,
               "E Szöcs, D Muench, J Ranke, ER Scott, J Stanstrup, R Allaway, Tamas Stirling",
@@ -208,14 +203,7 @@ df <- tribble(~what, ~when, ~with, ~where, ~why,
               2018,
               "ER Scott",
               "https://cran.r-project.org/web/packages/holodeck/",
-              "Author and maintainer",
-              
-              "bumbl: Tools for modeling bumblebee colony growth",
-              2019,
-              "ER Scott, E Crone",
-              "https://github.com/Aariq/bumbl",
               "Author and maintainer"
-              
               )
 ```
 
@@ -224,8 +212,6 @@ df %>%
   arrange(desc(when)) %>% 
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
-
-
 
 # Presentations
 
@@ -271,17 +257,20 @@ outreach %>%
 
 # Service
 
+-   Review Editor for Plant Metabolism and Chemodiversity section of Frontiers in Plant Science
+
 **Manuscript Reviews**
+
 ```{r}
 #set this up to pull from publons some day.
 ```
 
-- Agronomy (1)
-- Journal of Chemical Ecology (1)
-- Ecological Entomology (3)
-- International Journal of Climatology (2)
-- Oecologia (1)
-- Frontiers in Cellular and Infection Microbiology (1)
+-   Agronomy (1)
+-   Journal of Chemical Ecology (1)
+-   Ecological Entomology (3)
+-   International Journal of Climatology (2)
+-   Oecologia (1)
+-   Frontiers in Cellular and Infection Microbiology (1)
 
 ```{r}
 jobs %>%
@@ -322,4 +311,3 @@ development %>%
     with = location
   )
 ```
-
