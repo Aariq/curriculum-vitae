@@ -62,7 +62,7 @@ Start,End,What,With,Where,Tag,Why
 ,,,,,,Ran course management site including management of live and recorded video lectures
 1/15/19,5/15/19,Undergraduate Mentor,Tufts University,"Medford, MA",mentoring,"Mentored undergraduate through the design, implementation, and write up of an experiment"
 7/15/19,12/15/20,Graduate Research Assistant,Crone Lab,Tufts University,research,Developed the R package \emph{bumbl} which provides functions for modeling bumblebee colony growth.
-1/15/20,5/15/20,Ecological Statistics and Data (Instructor of record),Tufts University,"Medford, MA",teaching,"Lectured on probability theory, generalized linear models, mixed effects models, and hierarchical models"
+1/15/20,5/15/20,Ecological Statistics and Data (Instructor of record),Tufts University,"Medford, MA",teaching,"Developed curriculum to teach probability theory, generalized linear models, mixed effects models, and hierarchical models using ecological examples"
 ,,,,,,Created assignments and assessments in R Markdown
 ,,,,,,Mentored a teaching assistant in charge of a lab section
 5/15/20,present,Postdoctoral associate,Bruna Lab,University of Florida,research,Manage and integrate long-term datasets on precipitation and plant demography
