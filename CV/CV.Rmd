@@ -106,22 +106,6 @@ detailed_entries(edu,
 
 ```
 
-# Research Experience
-
-```{r research}
-jobs %>% 
-  filter(Tag == "research") %>% 
-  # arrange(desc(Start)) %>%
-  arrange(desc(End)) %>% 
-  detailed_entries(
-    what = What,
-    when = When,
-    with = With,
-    where = Where,
-    why = Why,
-    .protect = FALSE
-  )
-```
 
 ```{=html}
 <!--# Teaching Interests
@@ -129,9 +113,6 @@ A sentence or two about the sorts of courses I'd like to teach.  Tailor to each 
 -->
 ```
 
-# Teaching Experience
-131
- 
 # Teaching Experience
  
 ```{r}
@@ -157,6 +138,36 @@ presentations %>%
                    with = Conference,
                    where = Location,
                    why = Award)
+```
+## Training and Professional Development
+
+```{r}
+development %>% 
+  filter(str_detect(tag, "teaching") | str_detect(tag, "dei")) %>% 
+  arrange(desc(date)) %>% 
+  brief_entries(
+    what = title,
+    when = glue("{month(date, label = TRUE)} {year(date)}"),
+    with = location,
+    .protect = FALSE
+  )
+```
+
+# Research Experience
+
+```{r research}
+jobs %>% 
+  filter(Tag == "research") %>% 
+  # arrange(desc(Start)) %>%
+  arrange(desc(End)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    why = Why,
+    .protect = FALSE
+  )
 ```
 
 # Grants
@@ -314,14 +325,3 @@ presentations %>%
   )
 ```
 
-# Professional Development
-
-```{r}
-development %>% 
-  arrange(desc(date)) %>% 
-  brief_entries(
-    what = title,
-    when = glue("{month(date, label = TRUE)} {year(date)}"),
-    with = location
-  )
-```
