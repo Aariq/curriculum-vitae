@@ -209,7 +209,7 @@ scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
 ```
 
 ## Software
-
+<!-- Would be good to update these soon -->
 ```{r}
 df <- tribble(~what, ~when, ~with, ~where, ~why,
               "bumbl: Tools for modeling bumblebee colony growth",
