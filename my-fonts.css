@@ -1,0 +1,38 @@
+@import 'https://fonts.googleapis.com/css?family=Old+Standard+TT';
+
+body {
+  font-family:  "Times New Roman", serif;
+  font-size: 12px;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 4px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content:"\201C";
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #ccc;
+  content:"\201D";
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+code {
+  font-family: Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace;
+}
+pre, code {
+  font-size: .95em;
+}

@@ -1,0 +1,127 @@
+---
+title: "Documentation of Teaching Excellence"
+author: "Eric Scott"
+output:
+  pagedown::html_letter:
+    number_sections: no
+    css:
+      - my-fonts.css
+knit: pagedown::chrome_print
+links-to-footnotes: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Course Materials
+
+In 2017 I led the transition of Biostatistics from using SPSS to R and created curriculum for a recitation section for the course, which is essentially 2/3 of the way to a standalone "Intro to R for Biologists" course.
+
+-   [Biostatistics recitation materials](https://github.com/Aariq/biostatistics-recitation-2018)
+
+Currently, I am mentoring two undergraduate resarchers at University of Florida.
+I developed a syllabus for summer lab meetings as well as a mentorship agreement and other materials to scaffold the research experience.
+
+-   [REU Syllabus and Resources](https://github.com/BrunaLab/REU-resources)
+
+A lab meeting / training on reproducible research from these REU materials:
+
+-   [Reproducible Research](https://brunalab.github.io/reproducibility-presentation/)
+
+# Teaching Evaluations
+
+### Tufts University:
+
+**2020 - Ecological Statistics and Data (instructor of record)**
+An upper-level course I took over for Dr. Elizabeth Crone as a PhD student as instructor of record.
+Student evaluations were overall very positive (all but 2 students rated the course as "Excellent" or "Very Good").
+
+> This course has led me to think in new ways about how I want to record and analyze my own data.
+> Additionally, learning all of the statistics terminology associated with R has allowed me to actually understand what is happening in the "Statistical Analysis" section of research papers so that I can think more critically and deeply about the authors' work.
+
+Evaluations: https://tinyurl.com/y46tr2k4
+
+**2019 - Organisms and Populations (lecture TA)**
+The instructor rated me as "Exceeds Expectations" in all categories.
+
+> Eric is knowledgeable and efficient.
+> He returns assignments quickly and answers student questions in a timely manner.
+> Eric has good rapport with students and they feel comfortable coming to his office hours and emailing him with questions.
+
+Evaluations: https://tinyurl.com/y5rpy6ry
+
+**2016--2018 - Biostatistics (lead recitation TA)**
+Students gave overwhelmingly positive comments regarding learning R in my recitation.
+
+> I thoroughly enjoyed using R.
+> I am now able to utilize it in my work going forward.
+> It also made visualizing and interpreting the class material easier.
+
+> Learning R was a whole new way of thinking, a whole new language.
+> Learning to think in that way was cool.
+
+> Sometimes the R explanations were less clear, but that improved after the internal feedback session in class
+
+Evaluations: https://tinyurl.com/7nyjds54
+
+**2015 - Organisms and Populations (lab TA)**.
+As a TA I developed pre-lab mini-lectures and weekly assessments.
+
+> Eric was always interested in providing a way to visualize the concepts we were learning, through the use of whiteboard and other materials in addition to the standard lab exercises.
+> He was a clear speaker and always made us aware of his expectations.
+
+Evaluations: https://tinyurl.com/y3lu2ut9
+
+**2014 - Cells and Organisms (lab TA)**.
+The lab coordinator for the course summarized my student evaluations:
+
+> Eric's student evaluations were very positive.
+> Students mentioned his enthusiasm and clarity as well as his willingness to help.
+> Although some students felt that the feedback given could have been more helpful, others really appreciated the time and effort put in and felt the feedback was **very** helpful.
+
+Evaluations: https://tinyurl.com/87ew59wr
+
+### Front Range Community College:
+
+**2011--2013 - General College Biology (instructor of record)**.
+This course was meant to be equivalent to the introductory biology course offered at Colorado State University.
+Many of my students were adult learners taking their first class in decades.
+Many of the students found the course challenging, and I found it challenging to accommodate student needs while keeping up the standards of the course.
+The class average grade was typically a C or C+, but my supervisors ensured me repeatedly that I was grading fairly and doing a great job.
+Over my 3 years at FRCC, I continuously revised lectures and exams to bring them more in-line with each other.
+If I were to teach this course again, I'd include much more active learning or even teach as a flipped course.
+
+> I think this course in general is tough and I have a feeling a lot of people are going to write mean things about Eric and I think he is a great teacher, he made it clear we need to read and take notes...Eric is great, it's just the content that can be difficult
+
+> I like the class and how its challenging.
+
+Despite the challenging class, there were still many great reviews that I think reflect my teaching expertise:
+
+> Information was presented clearly and explained very well, and understanding was emphasized over rote memorization
+
+> He is helpful without just telling us how things work.
+> He lets us figure things out.
+
+> He is very approachable and explains concepts well.
+> I especially like his use of drawings and videos to help students understand.
+
+Evaluations: https://tinyurl.com/2wsnm8x9
+
+# Video
+
+
+[Generalized linear mixed effects models](https://tinyurl.com/y5ogyr4f)
+
+- A lecture from the Ecological Models and Statistics course I taught as instructor of record in Spring 2020.
+
+
+
+[Using the right tool for the job: Unsupervised and supervised analyses of ecological data](https://youtu.be/gDkaMfKAg8s)
+
+- A talk delivered at the Ecological Society of America meeting in 2020.
+
+
+[\#TeaScienceTuesday](https://youtube.com/playlist?list=PLtlw9R1NVcT4FtL9LfTtcjdzuiBwkoMus)
+
+- A series of videos on tea science geared toward general tea enthusiasts.
