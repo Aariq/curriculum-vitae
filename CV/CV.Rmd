@@ -12,6 +12,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::moderncv:
     theme: classic
+urlcolor: blue
 ---
 
 Updated `r Sys.Date()`
@@ -36,8 +37,11 @@ library(here)
 library(readxl)
 library(glue)
 library(conflicted)
+library(bib2df)
+library(textutils)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("here", "here")
+conflict_prefer("collapse", "glue")
 ```
 
 ```{r experience, inclue=FALSE}
@@ -195,17 +199,39 @@ awards %>%
 
 ^\*^ indicates undergraduate mentee author
 
-```{r publications}
-scholar::get_publications("kPEDEO0AAAAJ", flush = TRUE) %>%
-  mutate(author = str_replace_all(author, "MM Guo", "MM Guo*"),
-         author = str_replace_all(author, "A Agyei", "A Agyei*")) %>% 
-  arrange(desc(year)) %>%
-  detailed_entries(
-    what = title,
-    when = year,
-    with = author,
-    where = journal
+```{r include=FALSE}
+mypubs <-
+  #read in .bib file
+  bib2df(here("data", "my_publications.bib")) %>%
+  # put authors in one string
+  mutate(author = map(AUTHOR, ~glue_collapse(.x, sep = "; "))) %>% 
+  #underline my name
+  mutate(author = str_replace(author, "Scott, E R", "\\\\underline{Scott, E R}")) %>% 
+  mutate(author = str_replace(author, "Guo, M-M", "*Guo, M-M")) %>% 
+  mutate(author = str_replace(author, "Agyei, A", "*Agyei, A")) %>% 
+  mutate(
+    journal = if_else(is.na(JOURNAL), BOOKTITLE, JOURNAL),
+    doi = TeXencode(DOI),
+    where = glue("<journal>. \\url{http://doi.org/<doi>}", .open = "<", .close = ">")
+    ) %>% 
+  arrange(desc(YEAR))
+```
+
+
+```{r}
+detailed_entries(mypubs,
+    what = author,
+    when = YEAR,
+    with = TITLE,
+    where = where,
+    .protect = FALSE
   )
+```
+
+
+```{r publications}
+# bibliography_entries(here("data", "my_publications.bib")) %>% 
+#   arrange(desc(issued))
 ```
 
 ## Software
@@ -243,9 +269,9 @@ df %>%
 ## Research Talks
 
 ```{r}
-presentations %>% 
-  filter(Tag %in% c("talk", "invited")) %>% 
-  arrange(desc(When)) %>% 
+presentations %>%
+  filter(Tag %in% c("talk", "invited")) %>%
+  arrange(desc(When)) %>%
   detailed_entries(what = Title,
                    when = glue("{month(When, label = TRUE)} {year(When)}"),
                    with = Conference,
