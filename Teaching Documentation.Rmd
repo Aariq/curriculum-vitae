@@ -52,7 +52,7 @@ The instructor rated me as "Exceeds Expectations" in all categories.
 Evaluations: https://tinyurl.com/y5rpy6ry
 
 **2016--2018 - Biostatistics (lead recitation TA)**
-Students gave overwhelmingly positive comments regarding learning R in my recitation.
+Students gave overwhelmingly positive comments regarding learning R in the recitation section I created for this course.
 
 > I thoroughly enjoyed using R.
 > I am now able to utilize it in my work going forward.
