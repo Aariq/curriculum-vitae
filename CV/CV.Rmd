@@ -212,7 +212,10 @@ mypubs <-
   mutate(
     journal = if_else(is.na(JOURNAL), BOOKTITLE, JOURNAL),
     doi = TeXencode(DOI),
-    where = glue("<journal>. \\url{http://doi.org/<doi>}", .open = "<", .close = ">")
+    where = ifelse(
+      !is.na(doi),
+      glue("<journal>. \\url{http://doi.org/<doi>}", .open = "<", .close = ">"),
+      journal)
     ) %>% 
   arrange(desc(YEAR))
 ```
