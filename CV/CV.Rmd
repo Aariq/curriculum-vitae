@@ -203,6 +203,9 @@ awards %>%
 mypubs <-
   #read in .bib file
   bib2df(here("data", "my_publications.bib")) %>%
+  mutate(MONTH = if_else(is.na(MONTH), "jan", MONTH),
+    date = ymd(paste(YEAR, MONTH, "01", sep = "-"))) %>% 
+  arrange(desc(date)) %>% 
   # put authors in one string
   mutate(author = map(AUTHOR, ~glue_collapse(.x, sep = "; "))) %>% 
   #underline my name
@@ -267,6 +270,8 @@ df %>%
   detailed_entries(what = what, when = when, with = with, where = where, why = why)
 ```
 
+\newpage
+
 # Presentations
 
 ## Research Talks
@@ -296,6 +301,7 @@ presentations %>%
                    why = Award,
                    .protect = FALSE)
 ```
+\newpage
 
 # Outreach
 
