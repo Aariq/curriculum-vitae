@@ -320,9 +320,13 @@
 \newcommand*{\stackoverflowsocialsymbol} {}
 \newcommand*{\orcidsocialsymbol}   {}
 \newcommand*{\researchgatesocialsymbol}{}
-\newcommand*{\researchidsocialsymbol}{}
+\newcommand*{\researcheridsocialsymbol}{}
 \newcommand*{\googlescholarsocialsymbol}{}
 \newcommand*{\telegramsocialsymbol}{}
+\newcommand*{\whatsappsocialsymbol}{}
+\newcommand*{\signalsocialsymbol}{}
+\newcommand*{\matrixsocialsymbol}{}
+\newcommand*{\bornsymbol}{}
 
 % other
 %------
@@ -362,6 +366,11 @@
 \newcommand*{\moderncvfoot}[2][]{%
   \@loadmoderncvpackage[#1]{foot}{#2}}
 
+% loads a color scheme
+% usage: \moderncvcolor{<color scheme name>}
+\newcommand*{\moderncvcolor}[1]{%
+  \RequirePackage{moderncvcolor#1}}
+  
 % loads an icons set
 % usage: \moderncvicons{<icon set name>}
 \newcommand*{\moderncvicons}[1]{%
