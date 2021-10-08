@@ -109,7 +109,202 @@ detailed_entries(edu,
                  .protect = FALSE)
 
 ```
+# Research Experience
 
+```{=html}
+<!--
+A sentence or two about my research interests
+-->
+```
+
+```{r research}
+jobs %>% 
+  filter(Tag == "research") %>% 
+  # arrange(desc(Start)) %>%
+  arrange(desc(End)) %>% 
+  detailed_entries(
+    what = What,
+    when = When,
+    with = With,
+    where = Where,
+    # why = Why,
+    .protect = FALSE
+  )
+```
+
+# Publications
+
+^\*^ indicates undergraduate mentee author
+
+\bigskip
+
+```{r eval=FALSE, include=FALSE, results='asis'}
+library(RefManageR)
+my_pubs <- RefManageR::ReadBib(here("data", "my_publications.bib"))
+NoCite(my_pubs)
+PrintBibliography(my_pubs, .opts = list(
+  sorting = "ydnt",
+  style = "markdown",
+  bib.style = "authoryear"
+))
+
+```
+
+**Scott ER**, Uriarte M, Bruna EM (2021, *in press*) Delayed effects of climate on vital rates lead to demographic divergence in Amazonian forest fragments. Global Change Biology. DOI: [10.1111/gcb.15900](https://doi.org/10.1111/gcb.15900). Preprint: [10.1101/2021.06.28.450186](https://doi.org/10.1101/2021.06.28.450186)
+
+\medskip
+
+**Scott ER**, Wei J-P, Li X, Han W-Y, Orians CM (2021) Differing non-linear, lagged effects of temperature and precipitation on an insect herbivore and its host plant. Ecological Entomology 46:866–876. DOI: [10.1111/een.13023](https://doi.org/10.1111/een.13023)
+
+\medskip
+
+Donatelli CM, Roberts AS, **Scott ER**, DeSmith K, Summers D, Abu-Bader L, Baxter D, Standen EM, Porter ME, Summers AP, Tytell ED (2021) Foretelling the flex—vertebral shape predicts behavior and ecology of fishes. Integrative and Comparative Biology. DOI: [10.1093/icb/icab110](https://doi.org/10.1093/icb/icab110)
+
+\medskip
+
+**Scott ER**, Crone EE (2021) Using the right tool for the job: the difference between unsupervised and supervised analyses of multivariate ecological data. Oecologia. DOI: [10.1007/s00442-020-04848-w](https://doi.org/10.1007/s00442-020-04848-w)
+
+\medskip
+
+**Scott ER**, Li X, Wei J-P, Kfoury N, Morimoto J, Guo M-M^\*^, Agyei A^\*^, Robbat A, Ahmed S, Cash SB, Griffin TS, Stepp JR, Han W, Orians CM (2020) Changes in tea plant secondary metabolite profiles as a function of leafhopper density and damage. Frontiers in Plant Science 11:636. DOI: [10.3389/FPLS.2020.00636](https://doi.org/10.3389/FPLS.2020.00636)
+
+\medskip
+
+Szöcs E, Stirling T, **Scott ER**, Scharmüller A, Schäfer RB (2020) webchem: An R Package to Retrieve Chemical Information from the Web. J Stat Soft 93. DOI: [10.18637/jss.v093.i13](https://doi.org/10.18637/jss.v093.i13)
+
+\medskip
+
+**Scott ER**, Li X, Kfoury N, Morimoto J, Han W-Y, Ahmed S, Cash SB, Griffin TS, Stepp JR, Robbat A, Orians CM (2019) Interactive effects of drought severity and simulated herbivory on tea (Camellia sinensis) volatile and non-volatile metabolites. Environmental and Experimental Botany 157:283–292. DOI: [10.1016/j.envexpbot.2018.10.025](https://doi.org/10.1016/j.envexpbot.2018.10.025)
+
+\medskip
+
+Orians CM, Schweiger R, Dukes JS, **Scott ER**, Müller C (2019) Combined impacts of prolonged drought and warming on plant size and foliar chemistry. Annals of Botany 124:41–52. DOI: [10.1093/aob/mcz004](https://doi.org/10.1093/aob/mcz004)
+
+\medskip
+
+Kfoury N, **Scott ER**, Orians CM, Ahmed S, Cash SB, Griffin T, Matyas C, Stepp JR, Han W, Xue D, Long C, Robbat A (2019) Plant-Climate Interaction Effects: Changes in the Relative Distribution and Concentration of the Volatile Tea Leaf Metabolome in 2014–2016. Frontiers in Plant Science 10:1518. DOI: [10.3389/fpls.2019.01518](https://doi.org/10.3389/fpls.2019.01518)
+
+\medskip
+
+Kfoury N, Morimoto J, Kern A, **Scott ER**, Orians CM, Ahmed S, Griffin T, Cash SB, Stepp JR, Xue D, Long C, Robbat A (2018) Striking changes in tea metabolites due to elevational effects. Food Chemistry 264:334–341. DOI: [10.1016/j.foodchem.2018.05.040](https://doi.org/10.1016/j.foodchem.2018.05.040)
+
+\medskip
+
+Li X, Wei J-P, **Scott ER**, Liu J-WJ-W, Guo S, Li Y, Zhang L, Han W-Y (2018) Exogenous Melatonin Alleviates Cold Stress by Promoting Antioxidant Defense and Redox Homeostasis in Camellia sinensis L. Molecules 23:165. DOI: [10.3390/molecules23010165](https://doi.org/10.3390/molecules23010165)
+
+\medskip
+
+**Scott ER**, Orians CM (2018) Differential Changes in Tea Quality as Influenced by Insect Herbivory. In: Han W-Y, Li X, Ahammed GJ (eds) Stress Physiology of Tea in the Face of Climate Change. Springer Singapore, Singapore, pp 217–240
+
+\medskip
+
+Kfoury N, **Scott ER**, Orians C, Robbat A (2017) Direct Contact Sorptive Extraction: A Robust Method for Sampling Plant Volatiles in the Field. Journal of Agricultural and Food Chemistry 65:8501–8509. DOI: [10.1021/acs.jafc.7b02847](https://doi.org/10.1021/acs.jafc.7b02847)
+
+\medskip
+
+Dorchin N, **Scott ER**, Clarkin CE, Luongo MP, Jordan S, Abrahamson WG (2009) Behavioural, ecological and genetic evidence confirm the occurrence of host-associated differentiation in goldenrod gall-midges. Journal of evolutionary biology 22:729–739. DOI: [10.1111/j.1420-9101.2009.01696.x](https://doi.org/10.1111/j.1420-9101.2009.01696.x)
+
+\medskip
+
+Dorchin N, Clarkin CE, **Scott ER**, Luongo MP, Abrahamson WG (2007) Taxonomy, life history, and population sex ratios of North American Dasineura (Diptera: Cecidomyiidae) on goldenrods (Asteraceae). Annals of the Entomological Society of America 100:539–548. DOI: [10.1603/0013-8746(2007)100[539:TLHAPS]2.0.CO;2](https://doi.org/10.1603/0013-8746(2007)100[539:TLHAPS]2.0.CO;2)
+
+\medskip
+
+Dorchin N, **Scott ER**, Abrahamson WG (2006) First record of Macrolabis (Diptera: Cecidomyiidae) in America: A new inquiline species from Dasineura folliculi galls on goldenrods. Annals of the Entomological Society of America 99:656–661. DOI: [10.1603/0013-8746(2006)99[656:FROMDC]2.0.CO;2](https://doi.org/10.1603/0013-8746(2006)99[656:FROMDC]2.0.CO;2)
+
+
+```{r include=FALSE}
+
+mypubs <-
+  #read in .bib file
+  bib2df(here("data", "my_publications.bib")) %>%
+  mutate(MONTH = if_else(is.na(MONTH), "jan", MONTH),
+    date = ymd(paste(YEAR, MONTH, "01", sep = "-"))) %>% 
+  arrange(desc(date)) %>% 
+  # put authors in one string
+  mutate(author = map(AUTHOR, ~glue_collapse(.x, sep = "; "))) %>% 
+  #underline my name
+  mutate(author = str_replace(author, "Scott, E R", "\\\\underline{Scott, E R}")) %>% 
+  mutate(author = str_replace(author, "Guo, M-M", "*Guo, M-M")) %>% 
+  mutate(author = str_replace(author, "Agyei, A", "*Agyei, A")) %>% 
+  mutate(
+    journal = if_else(is.na(JOURNAL), BOOKTITLE, JOURNAL),
+    doi = TeXencode(DOI),
+    where = ifelse(
+      !is.na(doi),
+      glue("<journal>. \\url{http://doi.org/<doi>}", .open = "<", .close = ">"),
+      journal)
+    ) %>% 
+  arrange(desc(YEAR))
+```
+
+
+```{r eval=FALSE, include=FALSE}
+#don't like the format vitae produces, so I did it manually for now
+detailed_entries(mypubs,
+    what = author,
+    when = YEAR,
+    with = TITLE,
+    where = where,
+    .protect = FALSE
+  )
+```
+
+
+```{r publications, eval=FALSE, include=FALSE}
+bibliography_entries(here("data", "my_publications.bib")) %>%
+  arrange(desc(issued))
+```
+
+\bigskip
+
+**Software:**
+
+\bigskip
+
+**Scott ER** (2021) `bumbl`: Tools for modeling bumblebee colony growth and decline. https://CRAN.R-project.org/package=bumbl
+
+\medskip
+
+Szöcs E, Stirling T, **Scott ER**, Scharmüller A, and Schäfer RB (2020) `webchem`: Chemical Information from the Web. https://CRAN.R-project.org/package=webchem
+
+\medskip
+
+**Scott ER** (2019) `holodeck`: A Tidy Interface for Simulating Multivariate Data. https://CRAN.R-project.org/package=holodeck
+
+
+
+<!-- Would be good to update these soon -->
+```{r eval=FALSE, include=FALSE}
+df <- tribble(~what, ~when, ~with, ~where, ~why,
+              "bumbl: Tools for modeling bumblebee colony growth",
+              2021,
+              "ER Scott",
+              "https://cran.r-project.org/package=bumbl",
+              "Author and maintainer",
+              
+              "webchem: retrieve chemical information from the web",
+              2020,
+              "E Szöcs, D Muench, J Ranke, ER Scott, J Stanstrup, R Allaway, Tamas Stirling",
+              "https://cran.r-project.org/package=webchem",
+              "Contributor and maintainer",
+              
+              "holodeck: A tidy interface for simulating multivariate data",
+              2018,
+              "ER Scott",
+              "https://cran.r-project.org/package=holodeck",
+              "Author and maintainer"
+              )
+```
+
+```{r eval=FALSE, include=FALSE}
+df %>% 
+  arrange(desc(when)) %>% 
+  detailed_entries(what = what, when = when, with = with, where = where, why = why)
+```
+
+
+# Teaching Experience
 
 ```{=html}
 <!--# Teaching Interests
@@ -117,8 +312,6 @@ A sentence or two about the sorts of courses I'd like to teach.  Tailor to each 
 -->
 ```
 
-# Teaching Experience
- 
 ```{r}
 jobs %>%
   filter(Tag == "teaching", year(Start) > 2005) %>%
@@ -128,7 +321,8 @@ jobs %>%
     when = When,
     with = With,
     where = Where,
-    why = Why, .protect = FALSE)
+    # why = Why, 
+    .protect = FALSE)
 ```
   
 ## Guest Lectures
@@ -144,36 +338,7 @@ presentations %>%
                    why = Award)
 ```
 
-## Training and Professional Development
 
-```{r}
-development %>% 
-  filter(str_detect(tag, "teaching") | str_detect(tag, "dei")) %>% 
-  arrange(desc(date)) %>% 
-  brief_entries(
-    what = title,
-    when = glue("{month(date, label = TRUE)} {year(date)}"),
-    with = location,
-    .protect = FALSE
-  )
-```
-
-# Research Experience
-
-```{r research}
-jobs %>% 
-  filter(Tag == "research") %>% 
-  # arrange(desc(Start)) %>%
-  arrange(desc(End)) %>% 
-  detailed_entries(
-    what = What,
-    when = When,
-    with = With,
-    where = Where,
-    why = Why,
-    .protect = FALSE
-  )
-```
 # Mentoring Experience
 
   -	Ellie McDaniel (UF class of 2024) was a summer REU student working on the statistical assumptions and data limitations of applying distributed lag non-linear models to plant demographic analyses.
@@ -208,80 +373,8 @@ awards %>%
                 with = with)
 ```
 
-# Publications
-
-^\*^ indicates undergraduate mentee author
-
-```{r include=FALSE}
-mypubs <-
-  #read in .bib file
-  bib2df(here("data", "my_publications.bib")) %>%
-  mutate(MONTH = if_else(is.na(MONTH), "jan", MONTH),
-    date = ymd(paste(YEAR, MONTH, "01", sep = "-"))) %>% 
-  arrange(desc(date)) %>% 
-  # put authors in one string
-  mutate(author = map(AUTHOR, ~glue_collapse(.x, sep = "; "))) %>% 
-  #underline my name
-  mutate(author = str_replace(author, "Scott, E R", "\\\\underline{Scott, E R}")) %>% 
-  mutate(author = str_replace(author, "Guo, M-M", "*Guo, M-M")) %>% 
-  mutate(author = str_replace(author, "Agyei, A", "*Agyei, A")) %>% 
-  mutate(
-    journal = if_else(is.na(JOURNAL), BOOKTITLE, JOURNAL),
-    doi = TeXencode(DOI),
-    where = ifelse(
-      !is.na(doi),
-      glue("<journal>. \\url{http://doi.org/<doi>}", .open = "<", .close = ">"),
-      journal)
-    ) %>% 
-  arrange(desc(YEAR))
-```
 
 
-```{r}
-detailed_entries(mypubs,
-    what = author,
-    when = YEAR,
-    with = TITLE,
-    where = where,
-    .protect = FALSE
-  )
-```
-
-
-```{r publications}
-# bibliography_entries(here("data", "my_publications.bib")) %>% 
-#   arrange(desc(issued))
-```
-
-## Software
-<!-- Would be good to update these soon -->
-```{r}
-df <- tribble(~what, ~when, ~with, ~where, ~why,
-              "bumbl: Tools for modeling bumblebee colony growth",
-              2021,
-              "ER Scott",
-              "https://cran.r-project.org/package=bumbl",
-              "Author and maintainer",
-              
-              "webchem: retrieve chemical information from the web",
-              2020,
-              "E Szöcs, D Muench, J Ranke, ER Scott, J Stanstrup, R Allaway, Tamas Stirling",
-              "https://cran.r-project.org/package=webchem",
-              "Contributor and maintainer",
-              
-              "holodeck: A tidy interface for simulating multivariate data",
-              2018,
-              "ER Scott",
-              "https://cran.r-project.org/package=holodeck",
-              "Author and maintainer"
-              )
-```
-
-```{r}
-df %>% 
-  arrange(desc(when)) %>% 
-  detailed_entries(what = what, when = when, with = with, where = where, why = why)
-```
 
 
 # Presentations
@@ -313,6 +406,19 @@ presentations %>%
                    why = Award,
                    .protect = FALSE)
 ```
+# Professional Development
+
+```{r}
+development %>% 
+  filter(str_detect(tag, "teaching") | str_detect(tag, "dei") | str_detect(tag, "mentoring")) %>% 
+  arrange(desc(date)) %>% 
+  brief_entries(
+    what = title,
+    when = glue("{month(date, label = TRUE)} {year(date)}"),
+    with = location,
+    .protect = FALSE
+  )
+```
 
 # Outreach
 
@@ -328,20 +434,9 @@ outreach %>%
 
 # Service
 
--   Review Editor for Plant Metabolism and Chemodiversity section of Frontiers in Plant Science
+**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (1)
 
-**Manuscript Reviews**
-
-```{r}
-#set this up to pull from publons some day.
-```
-
--   Agronomy (1)
--   Journal of Chemical Ecology (1)
--   Ecological Entomology (3)
--   International Journal of Climatology (2)
--   Oecologia (1)
--   Frontiers in Cellular and Infection Microbiology (1)
+\bigskip
 
 ```{r}
 jobs %>%
@@ -356,9 +451,9 @@ jobs %>%
     )
 ```
 
-## Presented Workshops
+<!-- ## Presented Workshops -->
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 presentations %>% 
   filter(Tag == "workshop") %>% 
   arrange(desc(When)) %>% 
