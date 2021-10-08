@@ -158,17 +158,6 @@ development %>%
   )
 ```
 
-# Mentoring Experience
-
-  -	Ellie McDaniel (UF class of 2024) was a summer REU student working on the statistical assumptions and data limitations of applying distributed lag non-linear models to plant demographic analyses.
-  -	Andrew Mercadante (UF class of 2022) was a summer REU student working on edge effects in fragmented tropical forests.
-  -	Ji-Peng Wei (Masters student at Tea Research Institute) collaborated on four papers with me and was an integral collaborator for most of my PhD work. He went on to work in the tea industry China.
-  -	Ming-Ming Guo (Zhejiang University class of 2018) helped carry out field experiments in China in 2018 and co-authored a publication. Ming-Ming was accepted into a PhD program at the Tea Research Institute in Hangzhou, China.
-  -	Amma Agyei (Tufts class of 2022) conducted chemical analyses on tea samples and co-authored a publication. She was accepted to a combined BS/MS program in biomedical engineering at Tufts.
-  -	Lan Ngo (Tufts class of 2018) piloted a research project to look for indirect effects of climate change in a microbially ripened tea product. She was hired as a Research Data Specialist at Dana-Farber Cancer Institute.
-  -	Gabriel Taylor (Tufts class of 2018) accompanied me to China in 2017 to assist with fieldwork. After graduation, he worked for a labor union doing contract enforcement.
-  -	Michelle Mu (Tufts class of 2018) piloted a machine learning method for detection of leafhopper damage in leaf scans. She went on to receive a MS from Northeastern and work as a research associate for a biotech firm.
-
 # Research Experience
 
 ```{r research}
@@ -185,6 +174,16 @@ jobs %>%
     .protect = FALSE
   )
 ```
+# Mentoring Experience
+
+  -	Ellie McDaniel (UF class of 2024) was a summer REU student working on the statistical assumptions and data limitations of applying distributed lag non-linear models to plant demographic analyses.
+  -	Andrew Mercadante (UF class of 2022) was a summer REU student working on edge effects in fragmented tropical forests.
+  -	Ji-Peng Wei (Masters student at Tea Research Institute) collaborated on four papers with me and was an integral collaborator for most of my PhD work. He went on to work in the tea industry China.
+  -	Ming-Ming Guo (Zhejiang University class of 2018) helped carry out field experiments in China in 2018 and co-authored a publication. Ming-Ming was accepted into a PhD program at the Tea Research Institute in Hangzhou, China.
+  -	Amma Agyei (Tufts class of 2022) conducted chemical analyses on tea samples and co-authored a publication. She was accepted to a combined BS/MS program in biomedical engineering at Tufts.
+  -	Lan Ngo (Tufts class of 2018) piloted a research project to look for indirect effects of climate change in a microbially ripened tea product. She was hired as a Research Data Specialist at Dana-Farber Cancer Institute.
+  -	Gabriel Taylor (Tufts class of 2018) accompanied me to China in 2017 to assist with fieldwork. After graduation, he worked for a labor union doing contract enforcement.
+  -	Michelle Mu (Tufts class of 2018) piloted a machine learning method for detection of leafhopper damage in leaf scans. She went on to receive a MS from Northeastern and work as a research associate for a biotech firm.
 
 # Grants
 
@@ -193,7 +192,7 @@ awards %>%
   filter(tag == "grant") %>%
   detailed_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"),
                    why = amount) %>% 
-  mutate_all(as.character) %>% 
+  mutate(across(everything(), as.character)) %>% 
   mutate(with = as.character(with),
          when = as.character(when),
          where = as.character(where))
@@ -204,7 +203,9 @@ awards %>%
 ```{r}
  awards %>% 
   filter(!tag %in% c("failed", "travel", "grant")) %>% 
-  brief_entries(what = award, when = glue("{month(date, label = TRUE)} {year(date)}"), with = with)
+  brief_entries(what = award, 
+                when = glue("{month(date, label = TRUE)} {year(date)}"),
+                with = with)
 ```
 
 # Publications
@@ -258,20 +259,20 @@ detailed_entries(mypubs,
 df <- tribble(~what, ~when, ~with, ~where, ~why,
               "bumbl: Tools for modeling bumblebee colony growth",
               2021,
-              "ER Scott, E Crone",
+              "ER Scott",
               "https://cran.r-project.org/package=bumbl",
               "Author and maintainer",
               
               "webchem: retrieve chemical information from the web",
               2020,
               "E Szöcs, D Muench, J Ranke, ER Scott, J Stanstrup, R Allaway, Tamas Stirling",
-              "https://cran.r-project.org/web/packages/webchem/",
+              "https://cran.r-project.org/package=webchem",
               "Contributor and maintainer",
               
               "holodeck: A tidy interface for simulating multivariate data",
               2018,
               "ER Scott",
-              "https://cran.r-project.org/web/packages/holodeck/",
+              "https://cran.r-project.org/package=holodeck",
               "Author and maintainer"
               )
 ```
