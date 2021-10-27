@@ -1,0 +1,56 @@
+---
+title: "Eric R. Scott"
+author: ""
+date: ""
+output: html_document
+---
+```{r setup}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(vitae)
+library(here)
+library(glue)
+library(knitr)
+```
+
+```{css, echo=FALSE}
+h1 {
+color: blue;
+}
+.special {
+color: orange;
+font-weight: bold;
+}
+```
+
+# Education {.special}
+
+My education
+
+```{r edu}
+edu.raw <- read_csv(here("data", "education.csv")) %>% 
+  mutate(date = glue("{start_date}--{end_date}"))
+
+```
+2014--2020 PhD, Tufts University, Medford, MA.
+- Indirect and interactive effects of climate and herbivory on tea metabolites
+and quality
+- PI: Colin Orians
+
+# Publications
+
+# Research Experience
+
+# Teaching Experience
+
+# Mentoring Experience
+
+# Grants
+
+# Awards and Honors
+
+# Professional Development
+
+# Outreach
+
+# Service
