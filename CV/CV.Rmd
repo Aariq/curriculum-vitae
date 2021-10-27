@@ -150,7 +150,7 @@ PrintBibliography(my_pubs, .opts = list(
 
 ```
 
-**Scott ER**, Uriarte M, Bruna EM (2021, *in press*) Delayed effects of climate on vital rates lead to demographic divergence in Amazonian forest fragments. Global Change Biology. DOI: [10.1111/gcb.15900](https://doi.org/10.1111/gcb.15900). Preprint: [10.1101/2021.06.28.450186](https://doi.org/10.1101/2021.06.28.450186)
+**Scott ER**, Uriarte M, Bruna EM (2021) Delayed effects of climate on vital rates lead to demographic divergence in Amazonian forest fragments. Global Change Biology (Early View). DOI: [10.1111/gcb.15900](https://doi.org/10.1111/gcb.15900). Preprint: [10.1101/2021.06.28.450186](https://doi.org/10.1101/2021.06.28.450186)
 
 \medskip
 
@@ -434,7 +434,7 @@ outreach %>%
 
 # Service
 
-**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (1)
+**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (2), Frontiers in Plant Science (1)
 
 \bigskip
 
