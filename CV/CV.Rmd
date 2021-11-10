@@ -64,7 +64,7 @@ presentations.raw <- read_csv(here("data", "presentations.csv"))
 presentations <- 
   presentations.raw %>% 
   mutate(When = mdy(When)) %>% 
-  filter(When < today()) #exclude upcoming talks
+  filter(When <= today()) #exclude upcoming talks
 ```
 
 ```{r prof-devel, include=FALSE}
