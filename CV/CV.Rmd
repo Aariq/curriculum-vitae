@@ -272,6 +272,9 @@ Szöcs E, Stirling T, **Scott ER**, Scharmüller A, and Schäfer RB (2020) `webc
 
 **Scott ER** (2019) `holodeck`: A Tidy Interface for Simulating Multivariate Data. https://CRAN.R-project.org/package=holodeck
 
+\medskip
+
+Contributor to Levin S. et al. (2022) `ipmr`: Integral Projection Models https://CRAN.R-project.org/package=ipmr
 
 
 <!-- Would be good to update these soon -->
@@ -434,7 +437,7 @@ outreach %>%
 
 # Service
 
-**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (2), Frontiers in Plant Science (1)
+**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (2), Frontiers in Plant Science (2), Brazilian Journal of Botany (1)
 
 \bigskip
 
