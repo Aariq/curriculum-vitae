@@ -437,7 +437,7 @@ outreach %>%
 
 # Service
 
-**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (2), Frontiers in Plant Science (2), Brazilian Journal of Botany (1)
+**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (2), Frontiers in Plant Science (3), Brazilian Journal of Botany (1)
 
 \bigskip
 
