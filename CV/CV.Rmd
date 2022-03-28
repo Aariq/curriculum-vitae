@@ -64,7 +64,7 @@ presentations.raw <- read_csv(here("data", "presentations.csv"))
 presentations <- 
   presentations.raw %>% 
   mutate(When = mdy(When)) %>% 
-  filter(When <= today()) #exclude upcoming talks
+  filter(When > ymd("2008-01-01")) # filter out really old talks
 ```
 
 ```{r prof-devel, include=FALSE}
@@ -78,7 +78,8 @@ development <-
 awards.raw <- read_csv(here("data", "awards and grants.csv"))
 awards <- awards.raw %>% 
   mutate(date = mdy(date)) %>% 
-  arrange(desc(date))
+  arrange(desc(date)) %>% 
+  filter(date > ymd("2008-01-01")) #filter out undergrad
 ```
 
 ```{r edu, include=FALSE}
@@ -327,6 +328,8 @@ jobs %>%
     # why = Why, 
     .protect = FALSE)
 ```
+
+\pagebreak
   
 ## Guest Lectures
 
@@ -375,7 +378,6 @@ awards %>%
                 when = glue("{month(date, label = TRUE)} {year(date)}"),
                 with = with)
 ```
-
 
 
 
