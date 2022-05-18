@@ -12,7 +12,9 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::moderncv:
     theme: classic
-urlcolor: blue
+# header-includes:
+#   - \definecolor{linkscolor}{HTML}{026dbb}
+#   - \hypersetup{colorlinks=true, linkcolor=linkscolor, filecolor=linkscolor, urlcolor=linkscolor, urlbordercolor=linkscolor}
 ---
 
 Updated `r Sys.Date()`
