@@ -27,7 +27,7 @@ spelling::spell_check_files(c("CV.Rmd", data_files))
 
 ```{r eval=FALSE, include=FALSE}
 # To update CV on my website, run the following code in the console:
-rmarkdown::render(here::here("CV", "CV.Rmd"), output_file = "/Users/scottericr/Documents/GitHub/website2/static/files/Eric Scott cv.pdf")
+rmarkdown::render(here::here("CV", "CV.Rmd"), output_file = "../../website-v2/static/files/Eric Scott cv.pdf")
 ```
 
 ```{r setup, include=FALSE}
@@ -41,6 +41,7 @@ library(glue)
 library(conflicted)
 library(bib2df)
 library(textutils)
+library(spelling)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("here", "here")
 conflict_prefer("collapse", "glue")
