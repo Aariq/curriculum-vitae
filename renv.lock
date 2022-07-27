@@ -978,10 +978,10 @@
     },
     "nlme": {
       "Package": "nlme",
-      "Version": "3.1-157",
+      "Version": "3.1-158",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "dbca60742be0c9eddc5205e5c7ca1f44",
+      "Hash": "9469aeaeddf4f48a7ac70877d0b7ba36",
       "Requirements": [
         "lattice"
       ]

@@ -138,7 +138,8 @@ jobs %>%
 
 # Publications
 
-^\*^ indicates undergraduate mentee author
+^\*^ indicates undergraduate mentee author  
+^†^ indicates a publication that won an award
 
 \bigskip
 
@@ -154,7 +155,7 @@ PrintBibliography(my_pubs, .opts = list(
 
 ```
 
-**Scott ER**, Uriarte M, Bruna EM (2021) Delayed effects of climate on vital rates lead to demographic divergence in Amazonian forest fragments. Global Change Biology 28:463-479. DOI: [10.1111/gcb.15900](https://doi.org/10.1111/gcb.15900).
+^†^**Scott ER**, Uriarte M, Bruna EM (2021) Delayed effects of climate on vital rates lead to demographic divergence in Amazonian forest fragments. Global Change Biology 28:463-479. DOI: [10.1111/gcb.15900](https://doi.org/10.1111/gcb.15900).
 
 \medskip
 
@@ -166,7 +167,7 @@ Donatelli CM, Roberts AS, **Scott ER**, DeSmith K, Summers D, Abu-Bader L, Baxte
 
 \medskip
 
-**Scott ER**, Crone EE (2021) Using the right tool for the job: the difference between unsupervised and supervised analyses of multivariate ecological data. Oecologia. DOI: [10.1007/s00442-020-04848-w](https://doi.org/10.1007/s00442-020-04848-w)
+^†^**Scott ER**, Crone EE (2021) Using the right tool for the job: the difference between unsupervised and supervised analyses of multivariate ecological data. Oecologia. DOI: [10.1007/s00442-020-04848-w](https://doi.org/10.1007/s00442-020-04848-w)
 
 \medskip
 
