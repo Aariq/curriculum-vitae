@@ -1,11 +1,10 @@
 ---
 name: "Eric R. Scott, PhD"
-position: "Postdoctoral Associate"
-address: "University of Florida"
+position: "Scientific Programmer & Educator"
+address: "University of Arizona"
 phone: +1 925-788-9855
 www: ericrscott.com
-email: ericscott@ufl.edu
-twitter: LeafyEricScott
+email: ericscott@arizona.edu
 github: Aariq
 aboutme: ""
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -27,7 +26,7 @@ spelling::spell_check_files(c("CV.Rmd", data_files))
 
 ```{r eval=FALSE, include=FALSE}
 # To update CV on my website, run the following code in the console:
-rmarkdown::render(here::here("CV", "CV.Rmd"), output_file = "../../website-v2/static/files/Eric Scott cv.pdf")
+rmarkdown::render(here::here("CV", "CV.Rmd"), output_file = "../../website-quarto/Eric Scott cv.pdf")
 ```
 
 ```{r setup, include=FALSE}
