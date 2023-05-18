@@ -12,10 +12,10 @@ Aside
 ================================================================================
 
 
-![Eric Scott](/Users/scottericr/Documents/curriculum-vitae/data/eric.png){width=80%}
+![Eric Scott](./data/eric_scott.png){width=80%}
 <!-- ![Eric Scott](`r here::here("eric.png")`) -->
 
-PhD student specializing in multivariate data analysis, metabolomics, reproducible analyses, and teaching. On the market for data science and postdoc positions.
+Scientific Programmer & Educator
 
 Contact Info {#contact}
 --------------------------------------------------------------------------------
@@ -28,19 +28,16 @@ Contact Info {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-- Multivariate data analysis
-
-- Expert in R and R Studio with emphasis on the Tidyverse.
-
-- Expert in communicating to scientific and general public
-
-- Webscraping and data wrangling
-
-- Package development
-
-- Github
-
-- Some Python and SQL
+- Advanced R
+- R package development
+- Quarto / RMarkdown
+- Shiny
+- Git / GitHub
+- GitHub Actions
+- Ecological data analysis
+- Population / ecosystem modeling
+- Science communication
+- Beginner Python and SQL
 
 
 Disclaimer {#disclaimer}
@@ -58,7 +55,7 @@ Main
 Eric R. Scott {#title}
 --------------------------------------------------------------------------------
 
-### Eco-metabolomics, multivariate statistics, teaching
+### Data Scientist, Ecologist, Educator
 
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -95,10 +92,34 @@ Walla Walla, WA
 
 <!-- Thesis: Behavioral Evidence for Host-Race Formation in the Gall-Midge *Dasineura folliculi* (Felt) -->
 
-Research Experience {data-icon=flask}
+Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-### Graduate Research Assistant
+### Scientific Programmer & Educator
+
+University of Arizona
+
+Remote
+
+2022--
+
+- Collaborated with researchers on a variety of data science projects through a [data science incubator program](https://datascience.cals.arizona.edu/cct-data-science-incubator)
+- Developed and delivered "just in time" training on intermediate and advanced data science topics to researchers
+- Implemented ecosystem modeling pipelines as a collaborator on an interdisciplinary grant
+
+### Post Doctoral Researcher
+
+University of Florida
+
+Remote
+
+2019--2022
+
+- Developed automated QA/QC for a decade of data from a long term ecological research experiment
+- Analyzed plant population data with distributed lag non-linear models
+- Implemented integral projection models including lagged effects and projected population growth using climate model outputs (CMIP6)
+
+### Graduate Researcher
 
 Tufts University
 
@@ -107,60 +128,48 @@ Medford, MA
 2014--2019
 
 - Designed and carried out multiple field experiments in China and the US
-- Developed a strong understanding of multivariate approaches to analyzing metabolomics datasets
+- Developed a strong understanding of multivariate approaches to analyzing metabolomics data
 - Provided statistics consulting to Tufts researchers
 
-### Graduate Research Assistant
 
-University of Illinois at Urbana-Champaign
-
-Urbana, IL
-
-2007--2010
-
-- Designed and conducted a multi-year field experiment
-- Analyzed data using generalized linear mixed effects models
-
-Selected Teaching Experience {data-icon=chalkboard-teacher}
+Selected Workshops & Teaching {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-### Biostatistics using R
+### Managing Complicated Research Workflows in R With {targets}
+
+[Recording](https://youtu.be/UQk0LMLoJKQ)
+
+University of Arizona
+
+2022
+
+### Data Validation in Excel and R
+
+[Recording](https://youtu.be/euGjVnz6yOc)
+
+University of Arizona
+
+2022
+
+
+### Ecological Models and Statistics (course)
+
+[Syllabus](https://github.com/Aariq/ecological-stats/blob/master/docs/syllabus.pdf)
 
 Tufts University
 
-Medford, MA
+2019
 
-2016--2018
-
-<!--::: concise-->
-- Created companion [recitation section](https://github.com/Aariq/biotstatistics-recitation-2018) to Biostatistics course to teach introductory R with a focus on the Tidyverse
-<!--:::-->
 
 ### Reproducible Workflows for Ecology Research 
 
-Workshop presented at Tufts University
+[Materials](https://github.com/Aariq/Reproducibility-ERGO)
 
-Medford, MA
+Tufts University
 
-Oct 2018
+2018
 
-- Developed [workshop](https://github.com/Aariq/Reproducibility-ERGO) for ecologists including use of R projects, project organization, authoring R packages, GitHub, and data archiving
-
-
-
-### R Notebooks: Richly annotate your statistical analyses and produce dynamic reports
-
-Workshop presented at Tufts University
-
-Medford, MA
-
-Jan 2018
-
-- Demonstrated uses of R Notebooks for biological research
-- Discussed value of readable, annotated code for reproducibility and collaboration
-
-
-
+<!--
 Selected Presentations {data-icon=comment-alt}
 --------------------------------------------------------------------------------
 ### Multivariate Statistics for Ecology and Baked Goods
@@ -190,21 +199,55 @@ Medford, MA
 Aug 2017
 
 **ER Scott**, N Kfoury
+-->
 
 Selected Publications {data-icon=file}
 --------------------------------------------------------------------------------
 
+### Not just for programmers: How GitHub can accelerate collaborative and reproducible research in ecology and evolution
 
+MetaArXiv. (2022). doi:10.31222/osf.io/x3p2q
 
-### Combined impacts of prolonged drought and warming on plant size and foliar chemistry
+N/A
 
-Ann. Bot. (2019). doi:10.1093/aob/mcz004
+2022
+
+R Crystal-Ornelas, BPM Edwards, K Hérbert, EJ Hudgins, LL Sánchez Reyes, **ER Scott**, M Grainger, V Foroughirad, A Binley, C Brookson, K Gaynor, SS Sabet, A Güncan, F Hillemann, H Weirbach, DGE Gomez, PHP Braga
+
+### Delayed effects of climate on vital rates lead to demographic divergence in Amazonian forest fragments
+
+Global Change Biol. (2022). doi:10.1111/gcb.15900
+
+N/A
+
+2022
+
+**ER Scott**, M Uriarte, EM Bruna
+
+- Winner of postdoctoral excellence award from AoB Plants
+
+### webchem: An R Package to Retrieve Chemical Information from the Web
+
+J. Stat. Software. (2020). doi:10.18637/jss.v093.i13
+
+N/A
+
+2020
+
+E Szöcs, T Stirling, **ER Scott**, A Scharmüller, RB Schäfer
+
+### Using the right tool for the job: the difference between unsupervised and supervised analyses of multivariate ecological data
+
+Oecologia. (2019). doi:10.1007/s00442-020-04848-w
 
 N/A
 
 2019
 
-CM Orians, R Schweiger, J Dukes, **ER Scott**, C Müller
+**ER Scott**, EE Crone
+
+- Winner of Ehrlinger prize for best student paper from Oecologia
+
 
 ### Interactive effects of drought severity and simulated herbivory on tea (Camellia sinensis) volatile and non-volatile metabolites
 
@@ -216,22 +259,5 @@ N/A
 
  **ER Scott**, X Li, N Kfoury, J Morimoto, WY Han, S Ahmed, SB Cash, TS Griffin, JR Stepp, A Robbat, CM Orians
  
-### Striking changes in tea metabolites due to elevational effects
 
-Food Chem. 264, 334–341 (2018). doi:10.1007/978-981-13-2140-5
 
-N/A
-
-2018
-
-N Kfoury, J Morimoto, A Kern, **ER Scott**, CM Orians, S Ahmed, TS Griffin, SB Cash, JR Stepp, D-Y Xue, C-L Long, A Robbat
-
-### Direct Contact Sorptive Extraction: A Robust Method for Sampling Plant Volatiles in the Field
-
-J. Agric. Food Chem. 65, 8501–8509 (2017). doi:10.1016/j.foodchem.2018.05.040
-
-N/A
-
-2017
-
-N Kfoury, **ER Scott**, CM Orians, A Robbat 
