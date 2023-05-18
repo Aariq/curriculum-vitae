@@ -148,7 +148,7 @@ req <-
     include = "bib",
     sort = "date",
     style = "journal-of-ecology",
-    itemType = "-attachment || note"
+    itemType = "-attachment || note",
   ) |>
   req_headers(`Zotero-API-Key` = Sys.getenv("ZOTERO_API_KEY")) |>
   req_url_path("users", "6720834", "publications", "items") |> 
@@ -170,7 +170,8 @@ resp |>
   str_replace("(Scott, E\\. R\\.)", '**\\1**') |> 
   # remove divs
   str_remove_all("\\<\\/?div[^\\>]*\\>") |>
-  str_replace_all("\\\n", "\\\n\\\n") |> 
+  str_replace_all("\\\n$", "\\\n \\\\medskip") |>
+  str_replace_all("(^\\\n )", "\\1\\1") |> 
   cat()
 ```
 
