@@ -214,16 +214,16 @@ presentations %>%
 ```
 
 
-# Mentoring Experience
+<!-- # Mentoring Experience -->
 
-  -	Ellie McDaniel (UF class of 2024) was a summer REU student working on the statistical assumptions and data limitations of applying distributed lag non-linear models to plant demographic analyses.
-  -	Andrew Mercadante (UF class of 2022) was a summer REU student working on edge effects in fragmented tropical forests.
-  -	Ji-Peng Wei (Masters student at Tea Research Institute) collaborated on four papers with me and was an integral collaborator for most of my PhD work. He went on to work in the tea industry China.
-  -	Ming-Ming Guo (Zhejiang University class of 2018) helped carry out field experiments in China in 2018 and co-authored a publication. Ming-Ming was accepted into a PhD program at the Tea Research Institute in Hangzhou, China.
-  -	Amma Agyei (Tufts class of 2022) conducted chemical analyses on tea samples and co-authored a publication. She was accepted to a combined BS/MS program in biomedical engineering at Tufts.
-  -	Lan Ngo (Tufts class of 2018) piloted a research project to look for indirect effects of climate change in a microbially ripened tea product. She was hired as a Research Data Specialist at Dana-Farber Cancer Institute.
-  -	Gabriel Taylor (Tufts class of 2018) accompanied me to China in 2017 to assist with fieldwork. After graduation, he worked for a labor union doing contract enforcement.
-  -	Michelle Mu (Tufts class of 2018) piloted a machine learning method for detection of leafhopper damage in leaf scans. She went on to receive a MS from Northeastern and work as a research associate for a biotech firm.
+<!--   -	Ellie McDaniel (UF class of 2024) was a summer REU student working on the statistical assumptions and data limitations of applying distributed lag non-linear models to plant demographic analyses. -->
+<!--   -	Andrew Mercadante (UF class of 2022) was a summer REU student working on edge effects in fragmented tropical forests. -->
+<!--   -	Ji-Peng Wei (Masters student at Tea Research Institute) collaborated on four papers with me and was an integral collaborator for most of my PhD work. He went on to work in the tea industry China. -->
+<!--   -	Ming-Ming Guo (Zhejiang University class of 2018) helped carry out field experiments in China in 2018 and co-authored a publication. Ming-Ming was accepted into a PhD program at the Tea Research Institute in Hangzhou, China. -->
+<!--   -	Amma Agyei (Tufts class of 2022) conducted chemical analyses on tea samples and co-authored a publication. She was accepted to a combined BS/MS program in biomedical engineering at Tufts. -->
+<!--   -	Lan Ngo (Tufts class of 2018) piloted a research project to look for indirect effects of climate change in a microbially ripened tea product. She was hired as a Research Data Specialist at Dana-Farber Cancer Institute. -->
+<!--   -	Gabriel Taylor (Tufts class of 2018) accompanied me to China in 2017 to assist with fieldwork. After graduation, he worked for a labor union doing contract enforcement. -->
+<!--   -	Michelle Mu (Tufts class of 2018) piloted a machine learning method for detection of leafhopper damage in leaf scans. She went on to receive a MS from Northeastern and work as a research associate for a biotech firm. -->
 
 # Grants
 
@@ -280,6 +280,7 @@ presentations %>%
                    why = Award,
                    .protect = FALSE)
 ```
+
 # Professional Development
 
 ```{r}
@@ -308,7 +309,7 @@ outreach %>%
 
 # Service
 
-**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (2), Frontiers in Plant Science (3), Brazilian Journal of Botany (1)
+**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (2), Frontiers in Plant Science (3), Brazilian Journal of Botany (1), R Journal (1)
 
 \bigskip
 
