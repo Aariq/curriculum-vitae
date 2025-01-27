@@ -96,6 +96,13 @@ outreach <- outreach.raw %>% mutate(sortdate = mdy(sortdate))
 
 ```
 
+```{r service, include=FALSE}
+reviews.raw <- read_csv(here("data", "reviews.csv"))
+reviews <- reviews.raw |> select(Journal, Count)
+
+```
+
+
 # Education
 
 ```{r}
@@ -171,8 +178,6 @@ jobs %>%
     # why = Why, 
     .protect = FALSE)
 ```
-
-\pagebreak
   
 ## Guest Lectures
 
@@ -187,10 +192,8 @@ presentations %>%
                    why = Award)
 ```
 
-
+<!--
 # Mentoring Experience
-
-<!-- TODO: update to include Posit Academy?-->
 
   -	Ellie McDaniel (UF class of 2024) was a summer REU student working on the statistical assumptions and data limitations of applying distributed lag non-linear models to plant demographic analyses.
   -	Andrew Mercadante (UF class of 2022) was a summer REU student working on edge effects in fragmented tropical forests.
@@ -200,6 +203,7 @@ presentations %>%
   -	Lan Ngo (Tufts class of 2018) piloted a research project to look for indirect effects of climate change in a microbially ripened tea product. She was hired as a Research Data Specialist at Dana-Farber Cancer Institute.
   -	Gabriel Taylor (Tufts class of 2018) accompanied me to China in 2017 to assist with fieldwork. After graduation, he worked for a labor union doing contract enforcement.
   -	Michelle Mu (Tufts class of 2018) piloted a machine learning method for detection of leafhopper damage in leaf scans. She went on to receive a MS from Northeastern and work as a research associate for a biotech firm.
+-->
 
 # Grants
 
@@ -223,7 +227,6 @@ awards %>%
                 when = glue("{month(date, label = TRUE)} {year(date)}"),
                 with = with)
 ```
-
 
 
 
@@ -256,6 +259,7 @@ presentations %>%
                    why = Award,
                    .protect = FALSE)
 ```
+
 # Professional Development
 
 ```{r}
@@ -284,7 +288,14 @@ outreach %>%
 
 # Service
 
-**Manuscript Reviews**: Agronomy (1), Journal of Chemical Ecology (1), Ecological Entomology (3), International Journal of Climatology (2), Oecologia (1), Frontiers in Cellular and Infection Microbiology (1), BMC Plant Biology (2), Frontiers in Plant Science (3), Ecography(1), Brazilian Journal of Botany (1)
+**Manuscript Reviews**:
+
+```{r results='asis'}
+reviews |> 
+  glue::glue_data("{Journal} ({Count})") |> 
+  glue::glue_collapse(sep = ", ")
+```
+
 
 \bigskip
 
