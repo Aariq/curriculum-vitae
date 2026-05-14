@@ -20,8 +20,12 @@ Updated `r Sys.Date()`
 
 ```{r eval=FALSE, include=FALSE}
 # Remember to spell check!!
-data_files <- list.files(here("data"), pattern = ".csv", full.names = TRUE)
-spelling::spell_check_files(c("CV.Rmd", data_files))
+data_files <- list.files(
+  here::here("data"),
+  pattern = ".csv",
+  full.names = TRUE
+)
+spelling::spell_check_files(c(here::here("CV/CV.Rmd"), data_files))
 ```
 
 ```{r eval=FALSE, include=FALSE}
@@ -39,7 +43,7 @@ library(conflicted)
 conflict_prefer("filter", "dplyr")
 conflict_prefer("here", "here")
 conflict_prefer("collapse", "glue")
-source("../R/zotero_get_pubs.R")
+source(here("R/zotero_get_pubs.R"))
 ```
 
 ```{r experience, inclue=FALSE}
@@ -115,7 +119,8 @@ detailed_entries(edu,
                  .protect = FALSE)
 
 ```
-# Research Experience
+
+# Experience
 
 ```{=html}
 <!--
@@ -124,10 +129,10 @@ A sentence or two about my research interests
 ```
 
 ```{r research}
-jobs %>% 
-  filter(Tag == "research") %>% 
+jobs %>%
+  filter(Tag %in% c("research", "job")) %>%
   # arrange(desc(Start)) %>%
-  arrange(desc(End)) %>% 
+  arrange(desc(End)) %>%
   detailed_entries(
     what = What,
     when = When,

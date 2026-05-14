@@ -73,3 +73,6 @@ Start,End,What,With,Where,Tag,Why
 8/1/21,present,Review Editor,Frontiers in Plant Science,Frontiers in Plant Science,service,
 6/6/22,present,Scientific Programmer and Educator,CCT Data Science,University of Arizona,research,Provide research support and data science training for the College of Agriculture and Life Sciences
 8/25/23,present,Academy Mentor,Posit,remote,teaching,
+6/13/25,present,Chief Data Engineer,Grant Witness,remote,job,"Create and maintain automated workflows to pull data on federal grants and grant terminations from a variety of sources including PDFs, APIs, and web scraping."
+,,,,,,"Develop complex build pipelines to ingest data on federal grants, determine their status (terminated, restored, funds frozen, etc.), and summarize metadata, financial data, and grant event history."
+,,,,,,"Contribute methods, blog posts, data visualizations, and technical support to the grant-witness.us website."
